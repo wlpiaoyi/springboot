@@ -11,7 +11,8 @@
 
     <groupId>org.wlpiaoyi.springboot</groupId>
     <artifactId>api</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
+    <!--<packaging>war</packaging>-->
 
     <name>wlpiaoyi-api</name>
     <description>Wlpiaoyi-API-Service</description>
@@ -62,7 +63,7 @@
     </dependencies>
 
     <build>
-        <finalName>springboot.api</finalName>
+        <finalName>api</finalName>
         <plugins>
             <!--springboot 打包-->
             <plugin>

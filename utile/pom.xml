@@ -25,7 +25,6 @@
     <build>
         <!--<finalName>utile</finalName>-->
         <plugins>
-
             <!--maven打包-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
