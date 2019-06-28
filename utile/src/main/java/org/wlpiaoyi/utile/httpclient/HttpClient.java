@@ -1,15 +1,14 @@
 package org.wlpiaoyi.utile.httpclient;
 
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import com.google.gson.Gson;
+import okhttp3.*;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.SocketTimeoutException;
@@ -19,8 +18,15 @@ import java.security.cert.X509Certificate;
 import java.util.Map;
 
 public class HttpClient {
+
     public enum Method {
         GET, POST, PUT, DELETE
+    }
+
+    public static String getResponseText(Response response) throws IOException {
+        byte[] bytes = response.body().bytes();
+        String text = new String(bytes);
+        return text;
     }
 
     /**
@@ -35,14 +41,35 @@ public class HttpClient {
     }
 
     /**
-     * POST同步请求
+     * POST-Form同步请求
      * @param headerMap
      * @param url
-     * @param requestBody
+     * @param params
      * @return
      */
-    public static Response syncPOSTResponse(Map<String, String> headerMap, String url, RequestBody requestBody) {
-        Request request = createRequest(Method.POST, headerMap, url, requestBody);
+    public static Response syncPOSTFormResponse(Map<String, String> headerMap, String url, Map<String, String> params) {
+        FormBody.Builder builder = new FormBody.Builder();
+        for (Map.Entry<String, String> entry : params.entrySet()) {
+            builder.add(entry.getKey(), entry.getValue());
+        }
+        RequestBody bodyData = builder.build();
+        Request request = createRequest(Method.POST, headerMap, url, bodyData);
+        return syncResponse(request, null, -1);
+    }
+
+    /**
+     * POST-Json同步请求
+     * @param headerMap
+     * @param url
+     * @param params
+     * @return
+     */
+    public static Response syncPOSTJsonResponse(Map<String, String> headerMap, String url, Object params) {
+        Gson gson = new Gson();
+        String json = gson.toJson(params);
+        RequestBody bodyData = FormBody.create(MediaType.parse("application/json; charset=utf-8")
+                , json);
+        Request request = createRequest(Method.POST, headerMap, url, bodyData);
         return syncResponse(request, null, -1);
     }
 
