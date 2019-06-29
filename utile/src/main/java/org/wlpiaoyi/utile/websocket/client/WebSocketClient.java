@@ -49,21 +49,21 @@ public class WebSocketClient {
     }
 
 
+    public String sendSyncMessage(String message){
+        return this.socketListener.sendSyncMessage(message);
+    }
     public String sendSyncMessage(String message, String uuid){
         return this.socketListener.sendSyncMessage(message, uuid);
-    }
-
-    public String sendSyncMessage(String message){
-        return this.sendSyncMessage(message, null);
-    }
-
-    public String sendASyncMessage(String message, String uuid){
-        return this.socketListener.sendASyncMessage(message, uuid);
     }
 
     public boolean sendASyncMessage(String message){
         return this.socketListener.sendASyncMessage(message);
     }
+
+    public boolean sendASyncMessage(String message, String uuid){
+        return this.socketListener.sendASyncMessage(message, uuid);
+    }
+
 
     public void close(){
         this.socketListener.close();

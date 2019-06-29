@@ -19,7 +19,7 @@ import java.io.IOException;
 @EnableCaching
 @EnableScheduling
 @SpringBootApplication
-public class ApplicationLoader implements ApplicationContextAware, WebSocketListener {
+public class ApplicationLoader implements ApplicationContextAware {
 
     private static ApplicationContext APPLICATION_CONTEXT;
     public static void main(String[] args) {
@@ -32,38 +32,5 @@ public class ApplicationLoader implements ApplicationContextAware, WebSocketList
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         APPLICATION_CONTEXT = applicationContext;
-        WebSocketService.setWsListener(this);
-    }
-
-    @Override
-    public void onOpen(Object target) {
-
-    }
-
-    @Override
-    public void onMessage(Object target, String message, String uuid) {
-        WebSocketService wsService = (WebSocketService) target;
-        try {
-            log.info("\n====================>\n server receive for uuid:[" + uuid + "] for message:[" + message + "]\n");
-            message = wsService.sendSyncMessage("0", uuid);
-            log.info("\n====================>\n server send for uuid:[" + uuid + "] for message:[" + message + "]\n");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    public void onMessage(Object target, String message) {
-        log.info("\n====================>\n server receive for  message:[" + message + "]\n");
-    }
-
-    @Override
-    public void onClose(Object target) {
-
-    }
-
-    @Override
-    public void onError(Object target, Throwable error) {
-
     }
 }

@@ -1,6 +1,7 @@
 package org.wlpiaoyi.utile.websocket.client;
 
 import lombok.Getter;
+import lombok.NonNull;
 import okhttp3.Response;
 import okhttp3.WebSocket;
 import okio.ByteString;
@@ -37,22 +38,44 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
         if(listener != null) this.listener = new WeakReference<>(listener);
     }
 
-
-    public String sendASyncMessage(String message, String uuid){
-        if(uuid == null) uuid = UUIDUtile.getUUID();
+    /**
+     * 实现服务器异步线程安全主动推送
+     * @param message
+     * @param uuid
+     * @return
+     */
+    public boolean sendASyncMessage(@NonNull String message, @NonNull String uuid){
         String sendArg = uuid + ":" + message;
-        if(this.sendASyncMessage(sendArg)){return uuid;}
-        else {return null;}
+        return this.sendASyncMessage(sendArg);
     }
 
-    public boolean sendASyncMessage(String text){
+    /**
+     * 实现服务器异步线程安全主动推送
+     * @param text
+     * @return
+     */
+    public boolean sendASyncMessage(@NonNull String text){
         return this.webSocket.send(text);
     }
 
-    public String sendSyncMessage(String message, String uuid){
-        if(uuid == null){
-            uuid = UUIDUtile.getUUID();
-        }
+
+    /**
+     * 实现客户端同步线程安全主动推送
+     * @param message
+     * @return
+     */
+    public String sendSyncMessage(@NonNull String message){
+        String uuid = UUIDUtile.getUUID64();
+        return this.sendSyncMessage(message, uuid);
+    }
+
+    /**
+     * 实现客户端同步线程安全主动推送
+     * @param message
+     * @param uuid
+     * @return
+     */
+    public String sendSyncMessage(@NonNull String message, @NonNull String uuid){
         String sendArg = uuid + ":" + message;
         CountDownLatch downLatch = new CountDownLatch(1);
         Map<String, Object> data = null;
@@ -86,12 +109,14 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
     @Override
     public void onOpen(WebSocket webSocket, Response response) {
         super.onOpen(webSocket, response);
-        if(this.listener != null){
-            this.listener.get().onOpen(this.client.get());
-        }
         this.webSocket = webSocket;
         this.downLatch.countDown();
-        System.out.println("连接成功！");
+
+        if(this.listener != null){
+            try{
+                this.listener.get().onOpen(this.client.get());
+            }catch (Exception e){e.printStackTrace();}
+        }
 
     }
 
@@ -111,7 +136,7 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
                     if(c == ':')break;
                     uuid.append(c);
                     index ++;
-                    if(index > 36){
+                    if(index > UUIDUtile.UUID64_LENGHT){
                         index = -1;
                         break;
                     }
@@ -133,15 +158,12 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
                 }
             }
         }catch (Exception e){e.printStackTrace();}
-        if(uuid == null){
+
+        if (this.listener != null){
             try{
-                if(this.listener != null){
+                if(uuid == null){
                     this.listener.get().onMessage(this, message);
-                }
-            }catch (Exception e){e.printStackTrace();}
-        }else{
-            try{
-                if(this.listener != null){
+                }else{
                     this.listener.get().onMessage(this, message, uuid.toString());
                 }
             }catch (Exception e){e.printStackTrace();}
@@ -152,23 +174,24 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
     public void onClosed(WebSocket webSocket, int code, String reason) {
         super.onClosed(webSocket, code, reason);
         if(this.listener != null){
-            this.listener.get().onClose(this.client.get());
+            try{
+                this.listener.get().onClose(this.client.get());
+            }catch (Exception e){e.printStackTrace();}
         }
-        System.out.println("closed:" + reason);
     }
 
     @Override
     public void onClosing(WebSocket webSocket, int code, String reason) {
         super.onClosing(webSocket, code, reason);
-        System.out.println("closing:" + reason);
     }
 
     @Override
     public void onFailure(WebSocket webSocket, Throwable t, Response response) {
         super.onFailure(webSocket, t, response);
         if(this.listener != null){
-            this.listener.get().onError(this.client, t.getCause());
+            try{
+                this.listener.get().onError(this.client, t.getCause());
+            }catch (Exception e){e.printStackTrace();}
         }
-        System.out.println("failure:" + t.getMessage());
     }
 }

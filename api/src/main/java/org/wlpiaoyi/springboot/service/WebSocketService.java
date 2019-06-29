@@ -1,8 +1,7 @@
 package org.wlpiaoyi.springboot.service;
 
-import com.google.gson.Gson;
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.NonNull;
 import org.springframework.stereotype.Component;
 import org.wlpiaoyi.utile.UUIDUtile;
 import org.wlpiaoyi.utile.websocket.WebSocketListener;
@@ -21,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * 异步WebSocket服务
  */
-@Slf4j
 @Component
 @ServerEndpoint("/test/{sid}")
 public class WebSocketService {
@@ -47,15 +45,24 @@ public class WebSocketService {
     @Getter
     private String sid = "";
 
+
     /**
-     * 实现服务器主动推送
+     * 实现服务器同步线程安全主动推送
+     * @param message
+     * @return
+     */
+    public String sendSyncMessage(@NonNull String message){
+        String uuid = UUIDUtile.getUUID64();
+        return this.sendSyncMessage(message, uuid);
+    }
+
+    /**
+     * 实现服务器同步线程安全主动推送
      * @param message
      * @param uuid
      * @return
      */
-    public String sendSyncMessage(String message, String uuid){
-
-        if(uuid == null) uuid = UUIDUtile.getUUID();
+    public String sendSyncMessage(@NonNull String message, @NonNull String uuid){
 
         String sendArg = uuid + ":" + message;
         CountDownLatch downLatch = new CountDownLatch(1);
@@ -85,26 +92,28 @@ public class WebSocketService {
 
 
     /**
-     * 实现服务器主动推送
+     * 实现服务器异步线程安全主动推送
      * @param message
      * @param uuid
      * @return
      * @throws IOException
      */
-    public String sendASyncMessage(String message, String uuid) throws IOException {
-        if(uuid == null) uuid = UUIDUtile.getUUID();
+    public void sendASyncMessage(@NonNull String message, @NonNull String uuid) throws IOException {
         String sendArg = uuid + ":" + message;
         this.sendASyncMessage(sendArg);
-        return uuid;
     }
 
     /**
-     * 实现服务器主动推送
+     * 实现服务器异步线程安全主动推送
      * @param message
      * @throws IOException
      */
-    public void sendASyncMessage(String message) throws IOException {
+    public void sendASyncMessage(@NonNull String message) throws IOException {
         this.session.getBasicRemote().sendText(message);
+    }
+
+    public void close() throws IOException {
+        this.session.close();
     }
 
     /**
@@ -114,11 +123,15 @@ public class WebSocketService {
      */
     @OnOpen
     public void onOpen(Session session,@PathParam("sid") String sid) {
-        log.info("有新窗口开始监听:"+sid+",当前在线人数为" + getOnlineCount());
         this.session = session;
         this.sid = sid;
         WebSocketService.SERVICE_SET.add(this);
         addOnlineCount();
+        if(WebSocketService.wsListener != null){
+            try{
+                WebSocketService.wsListener.get().onOpen(this);
+            }catch (Exception e){e.printStackTrace();}
+        }
     }
 
     /**
@@ -127,7 +140,6 @@ public class WebSocketService {
      */
     @OnMessage
     public void onMessage(String message) {
-        log.info("收到来自窗口"+sid+"的信息:"+message);
         StringBuilder uuid = new StringBuilder();
         try{
             int index = 0;
@@ -136,7 +148,7 @@ public class WebSocketService {
                     if(c == ':')break;
                     uuid.append(c);
                     index ++;
-                    if(index > 36){
+                    if(index > UUIDUtile.UUID64_LENGHT){
                         index = -1;
                         break;
                     }
@@ -158,20 +170,16 @@ public class WebSocketService {
                 }
             }
         }catch (Exception e){e.printStackTrace();}
-        if(uuid == null){
+
+        if (WebSocketService.wsListener != null){
             try{
-                if(WebSocketService.wsListener != null){
+                if(uuid == null){
                     WebSocketService.wsListener.get().onMessage(this, message);
-                }
-            }catch (Exception e){e.printStackTrace();}
-        }else{
-            try{
-                if(WebSocketService.wsListener != null){
+                }else{
                     WebSocketService.wsListener.get().onMessage(this, message, uuid.toString());
                 }
             }catch (Exception e){e.printStackTrace();}
         }
-
     }
 
     /**
@@ -179,11 +187,12 @@ public class WebSocketService {
      */
     @OnClose
     public void onClose() {
-        log.info("有一连接关闭！当前在线人数为" + getOnlineCount());
         WebSocketService.SERVICE_SET.remove(this);  //从set中删除
         subOnlineCount();//在线数减1
         if(WebSocketService.wsListener != null){
-            WebSocketService.wsListener.get().onClose(this);
+            try{
+                WebSocketService.wsListener.get().onClose(this);
+            }catch (Exception e){e.printStackTrace();}
         }
     }
 
@@ -194,13 +203,13 @@ public class WebSocketService {
      */
     @OnError
     public void onError(Session session, Throwable error) {
-        log.error("发生错误");
-        error.printStackTrace();
         if(session.isOpen()){
             try{session.close();} catch (Exception e){e.printStackTrace();}
         }
         if(WebSocketService.wsListener != null){
-            WebSocketService.wsListener.get().onError(this, error);
+            try{
+                WebSocketService.wsListener.get().onError(this, error);
+            }catch (Exception e){e.printStackTrace();}
         }
 
     }
