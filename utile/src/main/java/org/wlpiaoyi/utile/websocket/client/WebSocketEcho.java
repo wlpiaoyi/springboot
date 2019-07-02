@@ -1,27 +1,24 @@
 package org.wlpiaoyi.utile.websocket.client;
 
-import lombok.Getter;
 import lombok.NonNull;
 import okhttp3.Response;
 import okhttp3.WebSocket;
 import okio.ByteString;
-import org.wlpiaoyi.utile.UUIDUtile;
+import org.wlpiaoyi.utile.WsUtile;
 import org.wlpiaoyi.utile.websocket.WebSocketListener;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 
-final class WebSocketEcho extends okhttp3.WebSocketListener {
+final class WebSocketEcho extends okhttp3.WebSocketListener implements WsUtile.SendASyncMessageLitsener {
+
+    private WebSocket webSocket;
 
     private Map<String,Map<String, Object>> resultMap = new HashMap<>();
 
     private Object lock = new Object();
-
-    @Getter
-    private WebSocket webSocket;
 
     private int timeout;
 
@@ -31,6 +28,7 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
 
     private CountDownLatch downLatch;
 
+
     WebSocketEcho(int timeout, WebSocketClient client, WebSocketListener listener, CountDownLatch downLatch){
         this.timeout = timeout;
         this.client = new WeakReference<>(client);
@@ -38,13 +36,38 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
         if(listener != null) this.listener = new WeakReference<>(listener);
     }
 
+    @Override
+    public void ssmlSendASyncMessage(@NonNull String message) {
+        this.sendASyncMessage(message);
+    }
+
+    @Override
+    public Map<String, Map<String, Object>> getSsmlResultMap() {
+        return this.resultMap;
+    }
+
+    @Override
+    public WebSocketListener getSsmlwsAbstract() {
+        return this.listener.get();
+    }
+
+    @Override
+    public Object getSsmlLcok() {
+        return this.lock;
+    }
+
+    @Override
+    public int getSsmlTimeoutSeconds() {
+        return WebSocketClient.TIME_OUT_SECONDS;
+    }
+
     /**
      * 实现服务器异步线程安全主动推送
-     * @param message
      * @param uuid
+     * @param message
      * @return
      */
-    public boolean sendASyncMessage(@NonNull String message, @NonNull String uuid){
+    public boolean sendASyncMessage(@NonNull String uuid, @NonNull String message){
         String sendArg = uuid + ":" + message;
         return this.sendASyncMessage(sendArg);
     }
@@ -62,43 +85,20 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
     /**
      * 实现客户端同步线程安全主动推送
      * @param message
-     * @return
+     * @return index[]: 0,uuid 1,message
      */
-    public String sendSyncMessage(@NonNull String message){
-        String uuid = UUIDUtile.getUUID64();
-        return this.sendSyncMessage(message, uuid);
+    public String[] sendSyncMessage(@NonNull String message){
+        String uuid = WsUtile.getUUID64();
+        return new String[]{uuid, this.sendSyncMessage(uuid, message)};
     }
-
     /**
      * 实现客户端同步线程安全主动推送
      * @param message
      * @param uuid
      * @return
      */
-    public String sendSyncMessage(@NonNull String message, @NonNull String uuid){
-        String sendArg = uuid + ":" + message;
-        CountDownLatch downLatch = new CountDownLatch(1);
-        Map<String, Object> data = null;
-        try {
-            data = new HashMap<String, Object>(){{
-                put("downLatch", downLatch);
-            }};
-            if(!this.sendASyncMessage(sendArg)){
-                return null;
-            }
-            resultMap.put(uuid, data);
-            downLatch.await(this.timeout, TimeUnit.MILLISECONDS);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            synchronized (lock){
-                resultMap.remove(uuid);
-            }
-        }
-
-        if(data == null) return null;
-        String result = (String)data.get("result");
-        return result;
+    public String sendSyncMessage(@NonNull String uuid, @NonNull String message){
+        return WsUtile.ssmlSendSyncMessage(uuid, message, this);
     }
 
     public void close(){
@@ -128,46 +128,7 @@ final class WebSocketEcho extends okhttp3.WebSocketListener {
     @Override
     public void onMessage(WebSocket webSocket, String message) {
         super.onMessage(webSocket, message);
-        StringBuilder uuid = new StringBuilder();
-        try{
-            int index = 0;
-            try{
-                for (char c : message.toCharArray()) {
-                    if(c == ':')break;
-                    uuid.append(c);
-                    index ++;
-                    if(index > UUIDUtile.UUID64_LENGHT){
-                        index = -1;
-                        break;
-                    }
-                }
-            }catch (Exception e){e.printStackTrace();}
-            if(index == -1){
-                uuid = null;
-            }else{
-                Map<String, Object> data;
-                synchronized (lock){
-                    data = resultMap.get(uuid.toString());
-                }
-                String result = message.substring(index + 1);
-                message = result;
-                if(data != null){
-                    data.put("result", result);
-                    CountDownLatch downLatch = (CountDownLatch) data.get("downLatch");
-                    if(downLatch != null){downLatch.countDown();}
-                }
-            }
-        }catch (Exception e){e.printStackTrace();}
-
-        if (this.listener != null){
-            try{
-                if(uuid == null){
-                    this.listener.get().onMessage(this, message);
-                }else{
-                    this.listener.get().onMessage(this, message, uuid.toString());
-                }
-            }catch (Exception e){e.printStackTrace();}
-        }
+        WsUtile.onMessage(message,this.client, this);
     }
 
     @Override

@@ -9,10 +9,6 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.wlpiaoyi.springboot.service.WebSocketService;
-import org.wlpiaoyi.utile.websocket.WebSocketListener;
-
-import java.io.IOException;
 
 
 @Slf4j

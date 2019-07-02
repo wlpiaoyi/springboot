@@ -6,7 +6,7 @@ public interface WebSocketListener {
      * 建立连接回调
      * @param target
      */
-    public void onOpen(Object target);
+    void onOpen(Object target);
     /**
      * 收到客户端消息后调用的方法
      * @param target
@@ -31,4 +31,5 @@ public interface WebSocketListener {
      * @param error
      */
     void onError(Object target, Throwable error);
+
 }

@@ -8,11 +8,14 @@ import org.wlpiaoyi.utile.websocket.WebSocketListener;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * websocket 客户端
+ */
 public class WebSocketClient {
 
-    public static int TIME_OUT_SECONDS = 500000;
+    public static int TIME_OUT_SECONDS = 5000;
 
-    private WebSocketEcho socketListener;
+    private WebSocketEcho socketEcho;
 
     private CountDownLatch downLatch = new CountDownLatch(1);
 
@@ -21,7 +24,7 @@ public class WebSocketClient {
 
     public WebSocketClient(String url, WebSocketListener listener){
         this.url = url;
-        this.socketListener = new WebSocketEcho(TIME_OUT_SECONDS, this, listener, downLatch);
+        this.socketEcho = new WebSocketEcho(TIME_OUT_SECONDS, this, listener, downLatch);
     }
 
     //"ws://echo.websocket.org"
@@ -32,7 +35,7 @@ public class WebSocketClient {
                 .connectTimeout(TIME_OUT_SECONDS, TimeUnit.MILLISECONDS)//设置连接超时时间
                 .build();
         Request request = new Request.Builder().url(this.url).build();
-        client.newWebSocket(request, this.socketListener);
+        client.newWebSocket(request, this.socketEcho);
     }
     public boolean syncOpen() {
         this.asyncOpen();
@@ -49,24 +52,48 @@ public class WebSocketClient {
     }
 
 
-    public String sendSyncMessage(String message){
-        return this.socketListener.sendSyncMessage(message);
-    }
-    public String sendSyncMessage(String message, String uuid){
-        return this.socketListener.sendSyncMessage(message, uuid);
+    /**
+     * 实现客户端同步线程安全主动推送
+     * @param message
+     * @return index[]: 0,uuid 1,message
+     */
+    public String[] sendSyncMessage(String message){
+        return this.socketEcho.sendSyncMessage(message);
     }
 
+    /**
+     * 实现客户端同步线程安全主动推送
+     * @param message
+     * @param uuid
+     * @return
+     */
+    public String sendSyncMessage(String uuid, String message){
+        System.out.println("=============>:"+ message);
+        return this.socketEcho.sendSyncMessage(uuid, message);
+    }
+
+    /**
+     * 实现服务器异步线程安全主动推送
+     * @param message
+     * @return
+     */
     public boolean sendASyncMessage(String message){
-        return this.socketListener.sendASyncMessage(message);
+        return this.socketEcho.sendASyncMessage(message);
     }
 
-    public boolean sendASyncMessage(String message, String uuid){
-        return this.socketListener.sendASyncMessage(message, uuid);
+    /**
+     * 实现服务器异步线程安全主动推送
+     * @param uuid
+     * @param message
+     * @return
+     */
+    public boolean sendASyncMessage(String uuid, String message){
+        return this.socketEcho.sendASyncMessage(uuid, message);
     }
 
 
     public void close(){
-        this.socketListener.close();
+        this.socketEcho.close();
     }
 
 }
