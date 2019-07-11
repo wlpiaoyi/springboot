@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -106,7 +107,8 @@ public class DruidDataSourceConfig {
     @Value("${spring.jpa.physical-naming-strategy}")
     private String physicalNamingStrategy;
 
-
+    @Value("${spring.jpa.entity.packages-to-scan}")
+    private String packagesToScan;
 
 
     @Autowired
@@ -151,10 +153,10 @@ public class DruidDataSourceConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier("dataSource") DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource);
+        String[] args = this.packagesToScan.split(",");
         //实体存放的package位置
-        entityManagerFactoryBean.setPackagesToScan("org.wlpiaoyi.springboot.jpa");
+        entityManagerFactoryBean.setPackagesToScan(args);
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
-//        jpaVendorAdapter.setShowSql(this.showSql);
         entityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter);
 
         Properties jpaProperties = new Properties();
@@ -164,18 +166,17 @@ public class DruidDataSourceConfig {
         jpaProperties.put(HIBERNATE_FORMAT_SQL, this.formatSql);
         jpaProperties.put(HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS, this.enabelLazy);
         jpaProperties.put(HIBERNATE_PHYSICAL_NAME_STRATEGY, this.physicalNamingStrategy);
-//        jpaProperties.put("hibernate.physical_naming_strategy", "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy");
 
         jpaProperties.put("use_query_cache", "true");
         jpaProperties.put("use_second_level_cache", "false");
-
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
         return entityManagerFactoryBean;
     }
 
-    @Bean(name = "transactionManager")
-    public PlatformTransactionManager annotationDrivenTransactionManager() {
+    @Bean(name = "transactionManager-jpa")
+    public PlatformTransactionManager annotationDrivenTransactionManager(LocalContainerEntityManagerFactoryBean entityManagerFactoryBean) {
         PlatformTransactionManager transactionManager = new JpaTransactionManager();
+        ((JpaTransactionManager) transactionManager).setEntityManagerFactory(entityManagerFactoryBean.getObject());
         return transactionManager;
     }
 
