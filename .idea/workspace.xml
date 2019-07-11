@@ -2,14 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eda3437-b28a-4ee8-b55c-6f155d3c18cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpa/target/classes/jpa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa.druid/target/test-classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa.druid/target/test-classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/jpa.druid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/jpa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/main/resources/data-source-druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/META-INF/jpa.druid.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/META-INF/jpa.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1$StatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/classes/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/test-classes/META-INF/jpa.druid.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/test-classes/META-INF/jpa.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/test-classes/org/wlpiaoyi/springboot/jpa/ApplicationLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa.druid/target/test-classes/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa/target/classes/druid-data-source.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -42,11 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+            <state relative-caret-position="170">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,20 +78,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="-678">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java">
+        <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/DateUtile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,6 +132,7 @@
       <find>lazy</find>
       <find>SpringPhysicalNamingStrategy</find>
       <find>transactionManager-jpa</find>
+      <find>spring.datasource</find>
     </findStrings>
     <replaceStrings>
       <replace>this.listener.get().</replace>
@@ -121,21 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/UUIDUtile.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/WebSocketServiceTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketAbstract.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ws/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/SendASyncMessage.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/utile/pom.xml" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" />
         <option value="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" />
@@ -155,8 +165,6 @@
         <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" />
         <option value="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceTest.java" />
         <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSource.java" />
-        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
         <option value="$PROJECT_DIR$/jpa/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/jpa/src/main/resources/druid-data-source.properties" />
         <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1.java" />
@@ -169,9 +177,26 @@
         <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" />
         <option value="$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1Repository.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1Service.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" />
         <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java" />
-        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
         <option value="$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAConfig.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/resources/jpa.properties" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSource_Config.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/resources/data-source-normal.properties" />
+        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" />
+        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/DateUtile.java" />
+        <option value="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java" />
       </list>
     </option>
   </component>
@@ -229,25 +254,25 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -255,7 +280,7 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -264,7 +289,7 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -274,27 +299,7 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -302,14 +307,14 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -317,7 +322,7 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -326,7 +331,7 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -417,8 +422,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562816438612" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562839653485" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -428,13 +433,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.wlpiaoyi.utile.websocket" />
+      <recent name="org.wlpiaoyi.springboot.jpa" />
       <recent name="org.wlpiaoyi.springboot.jpa.configuration" />
       <recent name="org.wlpiaoyi.utile" />
-      <recent name="org.wlpiaoyi.utile.websocket" />
       <recent name="org.wlpiaoyi.springboot" />
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jpa/src/main/resources" />
+      <recent name="$PROJECT_DIR$/jpa.druid/src/main/resources" />
       <recent name="$PROJECT_DIR$/api/src/main/resources" />
       <recent name="$PROJECT_DIR$/api/src/main/java" />
     </key>
@@ -457,8 +464,8 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.DruidDataSourceConfigTest.test">
-    <configuration name="DruidDataSourceConfigTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jpa.druid" />
+    <configuration name="DataSourceConfigTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.wlpiaoyi.springboot.jpa.configuration.*" />
@@ -466,7 +473,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.wlpiaoyi.springboot.jpa.configuration" />
-      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.jpa.configuration.DruidDataSourceConfigTest" />
+      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.jpa.configuration.DataSourceConfigTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
@@ -607,44 +614,44 @@
       <workItem from="1562764253962" duration="135000" />
       <workItem from="1562764447443" duration="1220000" />
       <workItem from="1562765869105" duration="90000" />
-      <workItem from="1562766015441" duration="15159000" />
+      <workItem from="1562766015441" duration="19929000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 34m 12s.xml">
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 17h 39m 36s.xml">
       <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 35m 13s.xml">
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 17h 40m 41s.xml">
       <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 36m 10s.xml">
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 17h 41m 42s.xml">
       <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 36m 45s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 45m 35s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 37m 01s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 46m 56s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 37m 46s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 48m 07s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 38m 16s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 51m 10s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 38m 39s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 56m 17s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 39m 02s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 58m 27s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 39m 36s.xml">
-      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
+    <history-entry file="DataSourceConfigTest_test - 2019.07.11 at 17h 59m 26s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116822000" />
+    <option name="totallyTimeSpent" value="121592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,7 +666,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.37410587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.37410587" />
       <window_info id="Structure" order="1" sideWeight="0.50127876" side_tool="true" weight="0.26979" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -669,15 +676,15 @@
       <window_info id="Web" order="7" sideWeight="0.5031645" side_tool="true" weight="0.26979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.4373494" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4984375" weight="0.44578314" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.47710842" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4984375" weight="0.36626506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32771084" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32771084" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32771084" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32771084" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.50963855" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4985694" weight="0.32771084" />
@@ -723,6 +730,12 @@
           <line>37</line>
           <properties />
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -788,71 +801,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/httpclient/HttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -880,7 +828,7 @@
     </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.1.5.RELEASE/spring-boot-starter-data-jpa-2.1.5.RELEASE.pom" />
     <entry file="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.pom" />
-    <entry file="file://$PROJECT_DIR$/jpa.druid/jpa.druid.iml">
+    <entry file="file://$PROJECT_DIR$/jpa/jpa.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jpa/src/main/java/TEst.java" />
@@ -1002,7 +950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/pom.xml">
+    <entry file="file://$PROJECT_DIR$/jpa/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
@@ -1086,16 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="104" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/orm/jpa/hibernate/SpringPhysicalNamingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1110,30 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.7.RELEASE/spring-tx-5.1.7.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -1141,20 +1055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java">
+    <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="36" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="300">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
@@ -1163,30 +1067,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java">
+    <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+        <state relative-caret-position="172">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties">
+    <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="-313">
+          <caret line="87" column="3" lean-forward="true" selection-start-line="87" selection-start-column="3" selection-end-line="101" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE-sources.jar!/org/springframework/context/annotation/PropertySource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="201" column="34" selection-start-line="201" selection-start-column="12" selection-end-line="201" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/resources/jpa.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="110" column="63" selection-start-line="110" selection-start-column="63" selection-end-line="110" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/resources/data-source-druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/resources/data-source-normal.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/DateUtile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

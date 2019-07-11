@@ -3,7 +3,7 @@ package org.wlpiaoyi.utile.websocket.service;
 
 import lombok.Getter;
 import lombok.NonNull;
-import org.wlpiaoyi.utile.WsUtile;
+import org.wlpiaoyi.utile.websocket.WsUtile;
 import org.wlpiaoyi.utile.websocket.WebSocketListener;
 
 import javax.websocket.*;

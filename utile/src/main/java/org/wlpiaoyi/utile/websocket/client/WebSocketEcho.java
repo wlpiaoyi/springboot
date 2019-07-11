@@ -4,7 +4,7 @@ import lombok.NonNull;
 import okhttp3.Response;
 import okhttp3.WebSocket;
 import okio.ByteString;
-import org.wlpiaoyi.utile.WsUtile;
+import org.wlpiaoyi.utile.websocket.WsUtile;
 import org.wlpiaoyi.utile.websocket.WebSocketListener;
 
 import java.lang.ref.WeakReference;
