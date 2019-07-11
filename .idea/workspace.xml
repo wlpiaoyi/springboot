@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eda3437-b28a-4ee8-b55c-6f155d3c18cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpa.druid/jpa.druid.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jpa.druid/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/WebSocketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utile/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/UUIDUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java" afterDir="false" />
@@ -19,6 +17,9 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
     <ignored path="$PROJECT_DIR$/utile/target/" />
+    <ignored path="$PROJECT_DIR$/mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/jpa/target/" />
+    <ignored path="$PROJECT_DIR$/jpa.druid/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +46,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java">
+        <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="320">
+              <caret line="166" column="67" lean-forward="true" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="43" column="107" selection-start-line="43" selection-start-column="107" selection-end-line="43" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java">
+        <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="11" lean-forward="true" selection-start-line="9" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +112,13 @@
       <find>uuid4</find>
       <find>getSessionId</find>
       <find>TIME_OUT_SECONDS</find>
+      <find>529b76e338504d2ba1728c10a7c2612e970adcc5aa514db2b9b846775b153d09</find>
+      <find>validationQuery</find>
+      <find>douyin_task_l1</find>
+      <find>beginTime</find>
+      <find>PhysicalNamingStrategyStandardImpl</find>
+      <find>lazy</find>
+      <find>SpringPhysicalNamingStrategy</find>
     </findStrings>
     <replaceStrings>
       <replace>this.listener.get().</replace>
@@ -100,56 +132,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/springboot/utile/exception/BusinessException.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/springboot/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/springboot/service/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/ApiTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/NetworkClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/springboot/network/NetworkClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/springboot/network/HttpClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/utile/src/test/java/HttpClientTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/springboot/httpclient/HttpClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/springboot/httpclient/HttpClientTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/utile/ResponseUtile.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/springboot/ApplicationLoader.java" />
-        <option value="$PROJECT_DIR$/api/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/ResponseUtile.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/httpclient/HttpClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/wsclient/EchoWebSocketListener.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/wsclient/EchoWebSocketClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/wsclient/WsClient.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/wsclient/WsClientEcho.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/client/WsClientEcho.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WsClientEcho.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketListener.java" />
-        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/WebSecketClientTest.java" />
         <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/UUIDUtile.java" />
         <option value="$PROJECT_DIR$/api/src/test/java/WebSocketServiceTest.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketAbstract.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java" />
-        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/WebSocketService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ws/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/WebSocketService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/SendASyncMessage.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/WebSocketService.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" />
         <option value="$PROJECT_DIR$/utile/pom.xml" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WebSocketService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java" />
         <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" />
+        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" />
+        <option value="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java" />
+        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" />
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/TEst.java" />
+        <option value="$PROJECT_DIR$/jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/DruidDBConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/config/DruidDBConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDBConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/test/java/DataSourceTest.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/ApplicationLoader.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" />
+        <option value="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceTest.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSource.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/jpa/src/main/resources/druid-data-source.properties" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/EntityJpaRepository.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/ApplicationLoader.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/DouyinTaskL1Service.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties" />
+        <option value="$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -165,42 +198,32 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="utile" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="jpa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wlpiaoyi-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wlpiaoyi-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wlpiaoyi-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="jpa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wlpiaoyi-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.boot:spring-boot-starter-websocket:2.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="wlpiaoyi-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.boot:spring-boot-starter-websocket:2.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="org.springframework:spring-websocket:5.1.8.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -217,79 +240,185 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa.druid" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utile" type="462c0819:PsiDirectoryNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,17 +428,18 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562047397080" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562814346181" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.wlpiaoyi.springboot.jpa.configuration" />
       <recent name="org.wlpiaoyi.utile" />
       <recent name="org.wlpiaoyi.utile.websocket" />
       <recent name="org.wlpiaoyi.springboot" />
@@ -337,16 +467,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebSecketClientTest.test">
-    <configuration name="ApplicationLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.ApplicationLoader" />
-      <module name="api" />
+  <component name="RunManager" selected="JUnit.DruidDataSourceConfigTest.test">
+    <configuration name="DruidDataSourceConfigTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa.druid" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.wlpiaoyi.springboot.*" />
+          <option name="PATTERN" value="org.wlpiaoyi.springboot.jpa.configuration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.wlpiaoyi.springboot.jpa.configuration" />
+      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.jpa.configuration.DruidDataSourceConfigTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -399,7 +533,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="springboot [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+    <configuration name="utile [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -418,7 +552,7 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/utile" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -432,20 +566,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ApplicationLoader" />
       <item itemvalue="JUnit.HttpClientTest.test" />
       <item itemvalue="JUnit.WebSecketClientTest.test" />
       <item itemvalue="JUnit.WebSocketServiceTest.test" />
-      <item itemvalue="Maven.springboot [package]" />
+      <item itemvalue="JUnit.DruidDataSourceConfigTest.test" />
+      <item itemvalue="Maven.utile [package]" />
       <item itemvalue="Spring Boot.ApplicationLoader" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebSecketClientTest.test" />
-        <item itemvalue="JUnit.HttpClientTest.test" />
+        <item itemvalue="JUnit.DruidDataSourceConfigTest.test" />
         <item itemvalue="JUnit.WebSocketServiceTest.test" />
-        <item itemvalue="Application.ApplicationLoader" />
-        <item itemvalue="Maven.springboot [package]" />
+        <item itemvalue="JUnit.WebSecketClientTest.test" />
+        <item itemvalue="Maven.utile [package]" />
+        <item itemvalue="JUnit.HttpClientTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -468,44 +602,60 @@
       <workItem from="1561705729716" duration="10442000" />
       <workItem from="1561727821248" duration="22619000" />
       <workItem from="1561882239645" duration="16334000" />
-      <workItem from="1562032539776" duration="6898000" />
+      <workItem from="1562032539776" duration="11830000" />
+      <workItem from="1562118908319" duration="600000" />
+      <workItem from="1562135290893" duration="1086000" />
+      <workItem from="1562236195114" duration="1722000" />
+      <workItem from="1562419637902" duration="1624000" />
+      <workItem from="1562483148172" duration="2080000" />
+      <workItem from="1562552946922" duration="4217000" />
+      <workItem from="1562591733413" duration="3000" />
+      <workItem from="1562642590353" duration="5021000" />
+      <workItem from="1562762154024" duration="561000" />
+      <workItem from="1562762730046" duration="494000" />
+      <workItem from="1562763313470" duration="819000" />
+      <workItem from="1562764184649" duration="32000" />
+      <workItem from="1562764253962" duration="135000" />
+      <workItem from="1562764447443" duration="1220000" />
+      <workItem from="1562765869105" duration="90000" />
+      <workItem from="1562766015441" duration="13038000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebSecketClientTest_test - 2019.07.01 at 18h 34m 16s.xml">
-      <configuration name="WebSecketClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 40m 56s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSocketServiceTest_test - 2019.07.01 at 18h 35m 12s.xml">
-      <configuration name="WebSocketServiceTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 43m 20s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSecketClientTest_test - 2019.07.01 at 18h 37m 20s.xml">
-      <configuration name="WebSecketClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 47m 12s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSocketServiceTest_test - 2019.07.01 at 18h 40m 07s.xml">
-      <configuration name="WebSocketServiceTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 47m 39s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSecketClientTest_test - 2019.07.01 at 18h 40m 20s.xml">
-      <configuration name="WebSecketClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 48m 08s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSocketServiceTest_test - 2019.07.02 at 10h 49m 14s.xml">
-      <configuration name="WebSocketServiceTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 48m 38s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.07.02 at 10h 57m 07s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 10h 52m 28s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSecketClientTest_test - 2019.07.02 at 10h 57m 22s.xml">
-      <configuration name="WebSecketClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 02m 46s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSecketClientTest_test - 2019.07.02 at 10h 57m 38s.xml">
-      <configuration name="WebSecketClientTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 02m 57s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebSocketServiceTest_test - 2019.07.02 at 12h 05m 04s.xml">
-      <configuration name="WebSocketServiceTest.test" configurationId="JUnit" />
+    <history-entry file="DruidDataSourceConfigTest_test - 2019.07.11 at 11h 04m 20s.xml">
+      <configuration name="DruidDataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77027000" />
+    <option name="totallyTimeSpent" value="114701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,10 +667,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.3796446" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.37410587" />
       <window_info id="Structure" order="1" sideWeight="0.50127876" side_tool="true" weight="0.26979" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -530,31 +680,31 @@
       <window_info id="Web" order="7" sideWeight="0.5031645" side_tool="true" weight="0.26979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.33972603" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4984375" weight="0.08493151" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.4373494" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4984375" weight="0.55060244" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015625" side_tool="true" weight="0.4394141" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32771084" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32771084" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32771084" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4985694" weight="0.32771084" />
       <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.38219178" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24892704" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.21163167" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32956383" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32904148" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32956383" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3263328" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32618025" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,37 +729,11 @@
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java</url>
-          <line>30</line>
-          <properties class="org.wlpiaoyi.springboot.service.ws.WebSocketService" method="onMessage">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java</url>
-          <line>20</line>
-          <properties class="org.wlpiaoyi.springboot.service.ws.WebSocketService" method="onOpen">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java</url>
-          <line>38</line>
-          <properties class="org.wlpiaoyi.springboot.service.ws.WebSocketService" method="onClose">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java</url>
-          <line>48</line>
-          <properties class="org.wlpiaoyi.springboot.service.ws.WebSocketService" method="onError">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="93" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/orm/jpa/hibernate/SpringImplicitNamingStrategy.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -620,6 +744,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(1L)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ApplicationLoader.getBean(DouyinTaskL1Repository.class).save(task)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(5900L)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(5900)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>message.charAt(64)</expression-string>
         <language-id>JAVA</language-id>
@@ -645,141 +789,46 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
       <expression>
-        <expression-string>message.indexOf(WsUtile.UUID64_LENGHT)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>uuid.toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>message.length() - 5</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>t.cause</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>t.getCause()</expression-string>
+        <expression-string>taskL1.getLog()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="227">
+          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8-sources.jar!/lombok/Getter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/ResponseBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/RequestBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/FormBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.6.2/gson-2.6.2-sources.jar!/com/google/gson/Gson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="570" column="16" selection-start-line="570" selection-start-column="16" selection-end-line="570" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/internal/connection/RealConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="180" column="19" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/WebSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="111" column="13" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="13" />
+        <state relative-caret-position="104">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/httpclient/HttpClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="77">
           <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -787,290 +836,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/javax/websocket/RemoteEndpoint.java">
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="115" column="11" lean-forward="true" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/javax/websocket/OnOpen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-246">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/OkHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="406" column="29" selection-start-line="406" selection-start-column="29" selection-end-line="406" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="1200" column="48" selection-start-line="1200" selection-start-column="18" selection-end-line="1200" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="61" lean-forward="true" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-          <folding>
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/ref/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="253" selection-start-line="253" selection-end-line="253" />
-          <folding>
-            <element signature="e#9368#9369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="406" selection-start-line="406" selection-end-line="406" />
-          <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="2131" column="34" lean-forward="true" selection-start-line="2131" selection-start-column="34" selection-end-line="2131" selection-end-column="34" />
-          <folding>
-            <element signature="e#82971#82972#0" expanded="true" />
-            <element signature="e#83020#83021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/CharSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2-sources.jar!/okhttp3/WebSocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/WebSocketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3315#3316#0" expanded="true" />
-            <element signature="e#3403#3404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/SendASyncMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="43" column="52" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/javax/websocket/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/base/ws/WebSocketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1797#1798#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/ResponseUtile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/exception/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar!/org/jetbrains/annotations/Contract.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/17.0.0/annotations-17.0.0-sources.jar!/org/jetbrains/annotations/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/WsUtile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="810">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1079,15 +862,340 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="75">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.1.5.RELEASE/spring-boot-starter-data-jpa-2.1.5.RELEASE.pom" />
+    <entry file="file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.pom" />
+    <entry file="file://$PROJECT_DIR$/jpa.druid/jpa.druid.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa/src/main/java/TEst.java" />
+    <entry file="file://$PROJECT_DIR$/utile/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="212" column="16" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
+          <folding>
+            <element signature="e#5579#5580#0" expanded="true" />
+            <element signature="e#5624#5625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.18/druid-1.1.18.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.18/druid-1.1.18.jar!/com/alibaba/druid/pool/DruidDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="91" column="62" selection-start-line="91" selection-start-column="62" selection-end-line="91" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/MethodMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/support/StaticMethodMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/support/StaticMethodMatcherPointcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="70" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/support/AbstractRegexpMethodPointcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE-sources.jar!/org/springframework/aop/support/JdkRegexpMethodPointcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE-sources.jar!/org/springframework/orm/jpa/LocalContainerEntityManagerFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="187" column="16" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final-sources.jar!/org/hibernate/boot/model/naming/PhysicalNamingStrategyStandardImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="36" selection-start-line="36" selection-end-line="37" />
+          <folding>
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE-sources.jar!/org/springframework/orm/jpa/vendor/HibernateJpaVendorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE-sources.jar!/org/springframework/orm/jpa/JpaVendorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1031">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE-sources.jar!/org/springframework/orm/jpa/vendor/AbstractJpaVendorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+          <folding>
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3402#3403#0" expanded="true" />
+            <element signature="e#3932#3933#0" expanded="true" />
+            <element signature="e#3961#3962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE-sources.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1337">
+          <caret line="197" column="16" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/orm/jpa/hibernate/SpringImplicitNamingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="104" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE-sources.jar!/org/springframework/boot/orm/jpa/hibernate/SpringPhysicalNamingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DruidDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="166" column="67" lean-forward="true" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/druid-data-source.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="43" column="107" selection-start-line="43" selection-start-column="107" selection-end-line="43" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpa.druid/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" lean-forward="true" selection-start-line="9" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -1109,7 +1217,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

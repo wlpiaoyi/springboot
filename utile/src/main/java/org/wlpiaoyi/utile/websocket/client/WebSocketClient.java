@@ -27,7 +27,9 @@ public class WebSocketClient {
         this.socketEcho = new WebSocketEcho(TIME_OUT_SECONDS, this, listener, downLatch);
     }
 
-    //"ws://echo.websocket.org"
+    /**
+     * 异步开启ws
+     */
     public void asyncOpen() {
         OkHttpClient client = new OkHttpClient.Builder()
                 .readTimeout(TIME_OUT_SECONDS, TimeUnit.MILLISECONDS)//设置读取超时时间
@@ -37,6 +39,10 @@ public class WebSocketClient {
         Request request = new Request.Builder().url(this.url).build();
         client.newWebSocket(request, this.socketEcho);
     }
+
+    /**
+     * 同步开启ws
+     */
     public boolean syncOpen() {
         this.asyncOpen();
         try{
@@ -68,7 +74,6 @@ public class WebSocketClient {
      * @return
      */
     public String sendSyncMessage(String uuid, String message){
-        System.out.println("=============>:"+ message);
         return this.socketEcho.sendSyncMessage(uuid, message);
     }
 

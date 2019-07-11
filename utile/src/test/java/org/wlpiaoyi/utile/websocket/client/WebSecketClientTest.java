@@ -6,16 +6,14 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.wlpiaoyi.utile.websocket.WebSocketListener;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WebSecketClientTest implements WebSocketListener, Runnable {
+public class WebSecketClientTest implements Runnable {
 
     private int count = 20;
-    private int count2 = 0;
 
     @Before
     public void setUp() throws Exception {}
@@ -38,32 +36,26 @@ public class WebSecketClientTest implements WebSocketListener, Runnable {
     @Override
     public void run() {
 
-        String obj1 = null;
-        synchronized (WebSecketClientTest.class){
-            obj1 = "uuid"+this.count2;
-            this.count2 ++;
-        }
-        WebSocketClient wsClient = new WebSocketClient("ws://127.0.0.1:8001/wlpiaoyi/test/sid01", this);
+        WebSocketClient wsClient = new WebSocketClient("ws://127.0.0.1:8001/wlpiaoyi/test/sid01", null);
         if(!wsClient.syncOpen()){
             System.out.println("ws open faild");
             return;
         }
         int count = 0;
-        Gson gson = new Gson();
-        Map<String, Object> dataMap = new HashMap<>();
-
-        dataMap.put("type", "send-receive");
-        dataMap.put("count", count ++);
-        String message =  gson.toJson(dataMap);
-        String obj2 =  wsClient.sendSyncMessage(obj1, message);
-        String result[] = new String[]{obj1, obj2};
-        String uuid = result[0];
-        dataMap = gson.fromJson(result[1], Map.class);
-        dataMap.put("type", "send-receive");
-        dataMap.put("count", count ++);
-        dataMap.put("uuid", result[0]);
-        while (true){
-            try{
+        String uuid = "null";
+        try{
+            Gson gson = new Gson();
+            Map<String, Object> dataMap = new HashMap<>();
+            dataMap.put("type", "send-receive");
+            dataMap.put("count", count ++);
+            String message =  gson.toJson(dataMap);
+            String result[] =  wsClient.sendSyncMessage(message);
+            uuid = result[0];
+            dataMap = gson.fromJson(result[1], Map.class);
+            dataMap.put("type", "send-receive");
+            dataMap.put("count", count ++);
+            dataMap.put("uuid", result[0]);
+            while (true){
                 message =  gson.toJson(dataMap);
                 message =  wsClient.sendSyncMessage(((String)dataMap.get("uuid")), message);
                 dataMap = gson.fromJson(message, Map.class);
@@ -71,48 +63,27 @@ public class WebSecketClientTest implements WebSocketListener, Runnable {
                 dataMap.put("count", count ++);
                 Assert.assertFalse("org-uuid:" + uuid + " ret-uuid:" + ((String)dataMap.get("uuid")),
                         !((String)dataMap.get("uuid")).equals(uuid));
-                Thread.sleep(10);
-            }catch (Exception e){}
-            if(count > 4) break;
+                try{
+                    Thread.sleep(10);
+                }catch (Exception e){}
+                if(count > 4) break;
 
+            }
+            dataMap.put("type", "send-close");
+            dataMap.put("count", count ++);
+            message =  gson.toJson(dataMap);
+            wsClient.sendASyncMessage(uuid, message);
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        dataMap.put("type", "send-close");
-        dataMap.put("count", count ++);
-        message =  gson.toJson(dataMap);
-        wsClient.sendASyncMessage(uuid, message);
+        System.out.println(this.count + "<============uuid:"+ uuid + " count:" + count);
         synchronized (WebSecketClientTest.class){
             this.count--;
         }
-        System.out.println(this.count + "<============uuid:"+ uuid);
     }
 
     @After
     public void tearDown() throws Exception {
-
-    }
-
-    @Override
-    public void onOpen(Object target) {
-
-    }
-
-    @Override
-    public void onMessage(Object target, String message, String uuid) {
-
-    }
-
-    @Override
-    public void onMessage(Object target, String message) {
-
-    }
-
-    @Override
-    public void onClose(Object target) {
-
-    }
-
-    @Override
-    public void onError(Object target, Throwable error) {
 
     }
 }

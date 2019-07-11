@@ -48,7 +48,7 @@ final class WebSocketEcho extends okhttp3.WebSocketListener implements WsUtile.S
 
     @Override
     public WebSocketListener getSsmlwsAbstract() {
-        return this.listener.get();
+        return this.listener != null ? this.listener.get() : null;
     }
 
     @Override

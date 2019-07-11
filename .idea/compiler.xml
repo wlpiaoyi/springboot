@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
+        <module name="jpa.druid" />
+        <module name="mybatis" />
         <module name="utile" />
       </profile>
     </annotationProcessing>

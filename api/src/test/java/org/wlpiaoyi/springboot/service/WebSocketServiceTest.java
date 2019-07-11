@@ -11,7 +11,6 @@ import org.wlpiaoyi.utile.websocket.WebSocketListener;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Scanner;
 
 public class WebSocketServiceTest implements WebSocketListener {
 
@@ -39,16 +38,16 @@ public class WebSocketServiceTest implements WebSocketListener {
     }
 
     @Test
-    public void test() throws IOException {
+    public void test() {
         String[] args = new String[]{};
         SpringApplication.run(ApplicationLoader.class, args);
         while (true){
-            System.out.println("输入exit退出");
-            Scanner scan = new Scanner(System.in);
-            String read = scan.nextLine();
-            if(read.equals("exit")) break;
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println("系统关闭！");
     }
 
     @After
