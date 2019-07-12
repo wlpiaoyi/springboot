@@ -18,6 +18,8 @@ import java.sql.SQLException;
 @PropertySource(value = {"classpath:data-source-druid.properties","classpath:data-source-normal.properties"})
 public class DataSourceConfig {
 
+    @Value("${spring.datasource.db-type}")
+    private Class<? extends DataSource> dataSourceType;
 
     @Value("${spring.datasource.url}")
     private String dbUrl;
@@ -28,7 +30,7 @@ public class DataSourceConfig {
     @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${spring.datasource.driver-class-name}")
+    @Value("${spring.datasource.driverClassName}")
     private String driverClassName;
 
     @Value("${spring.datasource.initialSize}")
@@ -107,9 +109,16 @@ public class DataSourceConfig {
         return datasource;
     }
 
+    @Bean(name = "dataSource")
+    @ConfigurationProperties(prefix = "spring.datasource")
+    public DataSource dataSource() {
+        return DataSourceBuilder.create().type(this.dataSourceType).build();
+    }
+
+
     @Bean(name = "dataSource-normal")
     @ConfigurationProperties(prefix = "spring.datasource.normal")
-    public DataSource dataSource() {
+    public DataSource dataSourceNormal() {
         return DataSourceBuilder.create().build();
     }
 

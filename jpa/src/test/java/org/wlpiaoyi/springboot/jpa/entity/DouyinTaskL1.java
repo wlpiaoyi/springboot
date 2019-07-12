@@ -7,11 +7,12 @@ import lombok.Getter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
 @Table(name = "douyin_task_l1")
-public class DouyinTaskL1 implements Serializable,Cloneable {
+public class DouyinTaskL1 implements Serializable {
 
 
     // alias
@@ -121,19 +122,23 @@ public class DouyinTaskL1 implements Serializable,Cloneable {
      */
     @Column
     private String log;
+
+    @OneToMany(targetEntity = DouyinTaskL2.class, cascade = CascadeType.ALL, mappedBy = "parent") //mappedBy = "one" 表示one是一对多管理的被维护端， 既当添加many时顺带添加一个one
+    private List<DouyinTaskL2> childs;
+
+    @OneToMany(targetEntity = DouyinTaskL2.class, cascade = CascadeType.ALL, mappedBy = "originParent") //mappedBy = "one" 表示one是一对多管理的被维护端， 既当添加many时顺带添加一个one
+    private List<DouyinTaskL2> originChilds;
+
+
     // columns END
 
     public DouyinTaskL1.StatusEnum getStatusEnum(){
         return DouyinTaskL1.StatusEnum.getEnum(this.status);
     }
 
-    public DouyinTaskL1 clone(){
-        try {
-            return (DouyinTaskL1) super.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return null;
+    @Override
+    public String toString() {
+        return this.getClass().toString() + "[id=" + id + "]";
     }
 
 

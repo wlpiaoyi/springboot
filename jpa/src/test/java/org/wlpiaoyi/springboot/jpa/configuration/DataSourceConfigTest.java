@@ -31,20 +31,31 @@ public class DataSourceConfigTest {
         DouyinTaskL1Service taskL1Service =  ApplicationLoader.getBean(DouyinTaskL1Service.class);
         List<DouyinTaskL1> taskL1s =  taskL1Service.findAll();
         DouyinTaskL1 taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());
-        System.out.println(taskL1.getLog());
+        System.out.println("get=======================>\n" +
+                taskL1.getLog()
+                + "\n<=======================");
         taskL1.setLog(DateUtile.format(new Date(), "yyyy/MM/dd HH:mm:ss"));
         try{
             taskL1Service.save(taskL1);
+            taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());
         }catch (Exception e){e.printStackTrace();}
-        System.out.println(taskL1.getLog());
+        System.out.println("service save=======================>\n" +
+                taskL1.getLog()
+                + "\n<=======================");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        taskL1.setLog(DateUtile.format(new Date(), "yyyy/MM/dd HH:mm:ss"));
+        try{
+            ApplicationLoader.getBean(DouyinTaskL1Repository.class).save(taskL1);
+            taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());
+        }catch (Exception e){e.printStackTrace();}
+        System.out.println("repository save=======================>\n" +
+                taskL1.getLog()
+                + "\n<=======================");
 
-//        while (true){
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-//        }
     }
 
     @After
