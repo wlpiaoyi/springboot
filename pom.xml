@@ -11,8 +11,8 @@
     <modules>
         <module>api</module>
         <module>utile</module>
-        <module>mybatis</module>
-        <module>jpa</module>
+        <module>dataSource</module>
+        <module>generator</module>
     </modules>
 
 

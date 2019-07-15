@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
-        <module name="jpa" />
-        <module name="mybatis" />
+        <module name="dataSource" />
+        <module name="generator" />
         <module name="utile" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

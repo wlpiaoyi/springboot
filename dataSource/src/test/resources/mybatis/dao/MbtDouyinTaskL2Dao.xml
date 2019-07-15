@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--  -->
+<mapper namespace="org.wlpiaoyi.dataSource.dao.impl.MbtDouyinTaskL2Dao">
+    
+    <sql id="pager">
+        <if test="pager != null">
+            limit ${pager.pageSize} offset ${pager.offset}
+        </if>
+    </sql>
+
+    <sql id="criteriaQueryWhere">
+        <if test="criterias != null">
+            <where>
+                <foreach collection="criterias" item="criteria" separator="OR">
+                    <if test="criteria.valid">
+                        <trim prefix="(" suffix=")" prefixOverrides="AND">
+                            <foreach collection="criteria.criterions" item="criterion">
+                                <choose>
+                                    <when test="criterion.noValue">
+                                        AND ${criterion.condition}
+                                    </when>
+                                    <when test="criterion.singleValue">
+                                        AND ${criterion.condition} #{criterion.value}
+                                    </when>
+                                    <when test="criterion.betweenValue">
+                                        AND ${criterion.condition} #{criterion.value} AND #{criterion.secondValue}
+                                    </when>
+                                    <when test="criterion.listValue">
+                                        AND ${criterion.condition}
+                                        <foreach collection="criterion.value" item="listItem"
+                                            open="(" close=")" separator=",">
+                                            #{listItem}
+                                        </foreach>
+                                    </when>
+                                </choose>
+                            </foreach>
+                        </trim>
+                    </if>
+                </foreach>
+            </where>
+        </if>
+    </sql>
+    <resultMap id="MbtDouyinTaskL2" type="org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL2">
+        <id column="id" property="id" />
+        <result column="create_date" property="createDate" />
+        <result column="log" property="log" />
+        <result column="parent_id" property="parentId" />
+        <result column="status" property="status" />
+        <result column="account_id" property="accountId" />
+        <result column="task_count" property="taskCount" />
+        <result column="origin_parent_id" property="originParentId" />
+        <result column="excuted_count" property="excutedCount" />
+    </resultMap>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insert开始节点 -->
+    <!-- <insert id="insert" parameterType="java.lang.Object"> -->
+    <insert id="insert" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO douyin_task_l2
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,
+            create_date,
+            log,
+            parent_id,
+            status,
+            account_id,
+            task_count,
+            origin_parent_id,
+            excuted_count,
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            #{id},
+            #{createDate},
+            #{log},
+            #{parentId},
+            #{status},
+            #{accountId},
+            #{taskCount},
+            #{originParentId},
+            #{excutedCount},
+        </trim>
+    </insert>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insertSelective开始节点 -->
+    <!-- <insert id="insertSelective" parameterType="java.lang.Object"> -->
+    <insert id="insertSelective" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO douyin_task_l2
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+            id,
+            </if>
+            <if test="createDate != null">
+            create_date,
+            </if>
+            <if test="log != null">
+            log,
+            </if>
+            <if test="parentId != null">
+            parent_id,
+            </if>
+            <if test="status != null">
+            status,
+            </if>
+            <if test="accountId != null">
+            account_id,
+            </if>
+            <if test="taskCount != null">
+            task_count,
+            </if>
+            <if test="originParentId != null">
+            origin_parent_id,
+            </if>
+            <if test="excutedCount != null">
+            excuted_count,
+            </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+            #{id},
+            </if>
+            <if test="createDate != null">
+            #{createDate},
+            </if>
+            <if test="log != null">
+            #{log},
+            </if>
+            <if test="parentId != null">
+            #{parentId},
+            </if>
+            <if test="status != null">
+            #{status},
+            </if>
+            <if test="accountId != null">
+            #{accountId},
+            </if>
+            <if test="taskCount != null">
+            #{taskCount},
+            </if>
+            <if test="originParentId != null">
+            #{originParentId},
+            </if>
+            <if test="excutedCount != null">
+            #{excutedCount},
+            </if>
+        </trim>
+    </insert>
+    <sql id="set">
+        <set>
+            id = #{target.id},
+            create_date = #{target.createDate},
+            log = #{target.log},
+            parent_id = #{target.parentId},
+            status = #{target.status},
+            account_id = #{target.accountId},
+            task_count = #{target.taskCount},
+            origin_parent_id = #{target.originParentId},
+            excuted_count = #{target.excutedCount},
+        </set>
+    </sql>
+    <sql id="selectiveSet">
+        <set>
+            <if test="target.id != null">
+            id = #{target.id},
+            </if>
+            <if test="target.createDate != null">
+            create_date = #{target.createDate},
+            </if>
+            <if test="target.log != null">
+            log = #{target.log},
+            </if>
+            <if test="target.parentId != null">
+            parent_id = #{target.parentId},
+            </if>
+            <if test="target.status != null">
+            status = #{target.status},
+            </if>
+            <if test="target.accountId != null">
+            account_id = #{target.accountId},
+            </if>
+            <if test="target.taskCount != null">
+            task_count = #{target.taskCount},
+            </if>
+            <if test="target.originParentId != null">
+            origin_parent_id = #{target.originParentId},
+            </if>
+            <if test="target.excutedCount != null">
+            excuted_count = #{target.excutedCount},
+            </if>
+        </set>
+    </sql>
+    <select id="countByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.query.CriteriaQuery"
+        resultType="java.lang.Long">
+        SELECT COUNT(*) FROM douyin_task_l2
+        <include refid="criteriaQueryWhere" />
+    </select>
+    <select id="selectByCriteriaQuery" resultMap="MbtDouyinTaskL2"
+        parameterType="org.wlpiaoyi.dataSource.dao.query.CriteriaQuery">
+        SELECT
+        <if test="distinct">
+            DISTINCT
+        </if>
+        'true' as QUERYID,
+        douyin_task_l2.*
+        FROM douyin_task_l2
+        <include refid="criteriaQueryWhere" />
+        <if test="sorts != null">
+            <trim prefix="ORDER BY ">
+            <foreach collection="sorts" item="sort" separator=",">
+                ${sort.field} ${sort.direction}
+            </foreach>
+            </trim>
+        </if>
+        <include refid="pager" />
+    </select>
+    <select id="selectById" resultMap="MbtDouyinTaskL2" parameterType="long">
+        SELECT
+        douyin_task_l2.*
+        FROM douyin_task_l2
+        WHERE id = #{_parameter}
+    </select>
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM douyin_task_l2
+        WHERE id = #{_parameter}
+    </delete>
+    <delete id="deleteByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.model.param.DeleteByCriteriaQueryParam">
+        DELETE FROM douyin_task_l2
+        <include refid="criteriaQueryWhere" />
+    </delete>
+    <update id="updateByCriteriaQuerySelective" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE douyin_task_l2
+        <include refid="selectiveSet" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE douyin_task_l2
+        <include refid="set" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByIdSelective" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByIdParam">
+        UPDATE douyin_task_l2
+        <include refid="selectiveSet" />
+        WHERE id = #{id}
+    </update>
+    <update id="updateById" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByIdParam">
+        UPDATE douyin_task_l2
+        <include refid="set" />
+        WHERE id = #{id}
+    </update>
+</mapper>

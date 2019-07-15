@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--  -->
+<mapper namespace="org.wlpiaoyi.dataSource.dao.impl.MbtDouyinTaskL1Dao">
+    
+    <sql id="pager">
+        <if test="pager != null">
+            limit ${pager.pageSize} offset ${pager.offset}
+        </if>
+    </sql>
+
+    <sql id="criteriaQueryWhere">
+        <if test="criterias != null">
+            <where>
+                <foreach collection="criterias" item="criteria" separator="OR">
+                    <if test="criteria.valid">
+                        <trim prefix="(" suffix=")" prefixOverrides="AND">
+                            <foreach collection="criteria.criterions" item="criterion">
+                                <choose>
+                                    <when test="criterion.noValue">
+                                        AND ${criterion.condition}
+                                    </when>
+                                    <when test="criterion.singleValue">
+                                        AND ${criterion.condition} #{criterion.value}
+                                    </when>
+                                    <when test="criterion.betweenValue">
+                                        AND ${criterion.condition} #{criterion.value} AND #{criterion.secondValue}
+                                    </when>
+                                    <when test="criterion.listValue">
+                                        AND ${criterion.condition}
+                                        <foreach collection="criterion.value" item="listItem"
+                                            open="(" close=")" separator=",">
+                                            #{listItem}
+                                        </foreach>
+                                    </when>
+                                </choose>
+                            </foreach>
+                        </trim>
+                    </if>
+                </foreach>
+            </where>
+        </if>
+    </sql>
+    <resultMap id="MbtDouyinTaskL1" type="org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL1">
+        <id column="id" property="id" />
+        <result column="origin_id" property="originId" />
+        <result column="order_id" property="orderId" />
+        <result column="origin_order_id" property="originOrderId" />
+        <result column="task_type" property="taskType" />
+        <result column="begin_time" property="beginTime" />
+        <result column="end_time" property="endTime" />
+        <result column="status" property="status" />
+        <result column="depth" property="depth" />
+        <result column="log" property="log" />
+        <result column="count" property="count" />
+        <result column="excuted_count" property="excutedCount" />
+    </resultMap>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insert开始节点 -->
+    <!-- <insert id="insert" parameterType="java.lang.Object"> -->
+    <insert id="insert" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO douyin_task_l1
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,
+            origin_id,
+            order_id,
+            origin_order_id,
+            task_type,
+            begin_time,
+            end_time,
+            status,
+            depth,
+            log,
+            count,
+            excuted_count,
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            #{id},
+            #{originId},
+            #{orderId},
+            #{originOrderId},
+            #{taskType},
+            #{beginTime},
+            #{endTime},
+            #{status},
+            #{depth},
+            #{log},
+            #{count},
+            #{excutedCount},
+        </trim>
+    </insert>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insertSelective开始节点 -->
+    <!-- <insert id="insertSelective" parameterType="java.lang.Object"> -->
+    <insert id="insertSelective" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO douyin_task_l1
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+            id,
+            </if>
+            <if test="originId != null">
+            origin_id,
+            </if>
+            <if test="orderId != null">
+            order_id,
+            </if>
+            <if test="originOrderId != null">
+            origin_order_id,
+            </if>
+            <if test="taskType != null">
+            task_type,
+            </if>
+            <if test="beginTime != null">
+            begin_time,
+            </if>
+            <if test="endTime != null">
+            end_time,
+            </if>
+            <if test="status != null">
+            status,
+            </if>
+            <if test="depth != null">
+            depth,
+            </if>
+            <if test="log != null">
+            log,
+            </if>
+            <if test="count != null">
+            count,
+            </if>
+            <if test="excutedCount != null">
+            excuted_count,
+            </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+            #{id},
+            </if>
+            <if test="originId != null">
+            #{originId},
+            </if>
+            <if test="orderId != null">
+            #{orderId},
+            </if>
+            <if test="originOrderId != null">
+            #{originOrderId},
+            </if>
+            <if test="taskType != null">
+            #{taskType},
+            </if>
+            <if test="beginTime != null">
+            #{beginTime},
+            </if>
+            <if test="endTime != null">
+            #{endTime},
+            </if>
+            <if test="status != null">
+            #{status},
+            </if>
+            <if test="depth != null">
+            #{depth},
+            </if>
+            <if test="log != null">
+            #{log},
+            </if>
+            <if test="count != null">
+            #{count},
+            </if>
+            <if test="excutedCount != null">
+            #{excutedCount},
+            </if>
+        </trim>
+    </insert>
+    <sql id="set">
+        <set>
+            id = #{target.id},
+            origin_id = #{target.originId},
+            order_id = #{target.orderId},
+            origin_order_id = #{target.originOrderId},
+            task_type = #{target.taskType},
+            begin_time = #{target.beginTime},
+            end_time = #{target.endTime},
+            status = #{target.status},
+            depth = #{target.depth},
+            log = #{target.log},
+            count = #{target.count},
+            excuted_count = #{target.excutedCount},
+        </set>
+    </sql>
+    <sql id="selectiveSet">
+        <set>
+            <if test="target.id != null">
+            id = #{target.id},
+            </if>
+            <if test="target.originId != null">
+            origin_id = #{target.originId},
+            </if>
+            <if test="target.orderId != null">
+            order_id = #{target.orderId},
+            </if>
+            <if test="target.originOrderId != null">
+            origin_order_id = #{target.originOrderId},
+            </if>
+            <if test="target.taskType != null">
+            task_type = #{target.taskType},
+            </if>
+            <if test="target.beginTime != null">
+            begin_time = #{target.beginTime},
+            </if>
+            <if test="target.endTime != null">
+            end_time = #{target.endTime},
+            </if>
+            <if test="target.status != null">
+            status = #{target.status},
+            </if>
+            <if test="target.depth != null">
+            depth = #{target.depth},
+            </if>
+            <if test="target.log != null">
+            log = #{target.log},
+            </if>
+            <if test="target.count != null">
+            count = #{target.count},
+            </if>
+            <if test="target.excutedCount != null">
+            excuted_count = #{target.excutedCount},
+            </if>
+        </set>
+    </sql>
+    <select id="countByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.query.CriteriaQuery"
+        resultType="java.lang.Long">
+        SELECT COUNT(*) FROM douyin_task_l1
+        <include refid="criteriaQueryWhere" />
+    </select>
+    <select id="selectByCriteriaQuery" resultMap="MbtDouyinTaskL1"
+        parameterType="org.wlpiaoyi.dataSource.dao.query.CriteriaQuery">
+        SELECT
+        <if test="distinct">
+            DISTINCT
+        </if>
+        'true' as QUERYID,
+        douyin_task_l1.*
+        FROM douyin_task_l1
+        <include refid="criteriaQueryWhere" />
+        <if test="sorts != null">
+            <trim prefix="ORDER BY ">
+            <foreach collection="sorts" item="sort" separator=",">
+                ${sort.field} ${sort.direction}
+            </foreach>
+            </trim>
+        </if>
+        <include refid="pager" />
+    </select>
+    <select id="selectById" resultMap="MbtDouyinTaskL1" parameterType="long">
+        SELECT
+        douyin_task_l1.*
+        FROM douyin_task_l1
+        WHERE id = #{_parameter}
+    </select>
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM douyin_task_l1
+        WHERE id = #{_parameter}
+    </delete>
+    <delete id="deleteByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.model.param.DeleteByCriteriaQueryParam">
+        DELETE FROM douyin_task_l1
+        <include refid="criteriaQueryWhere" />
+    </delete>
+    <update id="updateByCriteriaQuerySelective" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE douyin_task_l1
+        <include refid="selectiveSet" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByCriteriaQuery" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE douyin_task_l1
+        <include refid="set" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByIdSelective" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByIdParam">
+        UPDATE douyin_task_l1
+        <include refid="selectiveSet" />
+        WHERE id = #{id}
+    </update>
+    <update id="updateById" parameterType="org.wlpiaoyi.dataSource.dao.model.param.UpdateByIdParam">
+        UPDATE douyin_task_l1
+        <include refid="set" />
+        WHERE id = #{id}
+    </update>
+</mapper>

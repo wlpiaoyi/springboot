@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="MbtDouyinTaskL1" type="org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL1"/>
+        <typeAlias alias="MbtDouyinTaskL2" type="org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL2"/>
+    </typeAliases>
+    <!--<mappers>-->
+        <!--<mapper resource="org/wlpiaoyi/dataSource/tabel/douyin_task_l1.xml"/>-->
+    <!--</mappers>-->
+</configuration>

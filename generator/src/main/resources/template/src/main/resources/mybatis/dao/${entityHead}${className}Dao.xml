@@ -1,0 +1,175 @@
+<#macro mapperEl value>${r"#{"}${value}}</#macro>
+<#macro enumMapperEl value>${r"#{"}${value}.code}</#macro>
+<#macro targetMapperEl value>${r"#{target."}${value}}</#macro>
+<#assign className = table.className>
+<#assign classNameFirstLower = table.classNameFirstLower>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- ${table.remarks} -->
+<mapper namespace="${basepackage}.dao.impl.${entityHead}${className}Dao">
+    
+    <sql id="pager">
+        <if test="pager != null">
+            ${r"limit ${pager.pageSize} offset ${pager.offset}"}
+        </if>
+    </sql>
+
+    <sql id="criteriaQueryWhere">
+        <if test="criterias != null">
+            <where>
+                <foreach collection="criterias" item="criteria" separator="OR">
+                    <if test="criteria.valid">
+                        <trim prefix="(" suffix=")" prefixOverrides="AND">
+                            <foreach collection="criteria.criterions" item="criterion">
+                                <choose>
+                                    <when test="criterion.noValue">
+                                        AND ${r"${criterion.condition}"}
+                                    </when>
+                                    <when test="criterion.singleValue">
+                                        AND ${r"${criterion.condition} #{criterion.value}"}
+                                    </when>
+                                    <when test="criterion.betweenValue">
+                                        AND ${r"${criterion.condition} #{criterion.value} AND #{criterion.secondValue}"}
+                                    </when>
+                                    <when test="criterion.listValue">
+                                        AND ${r"${criterion.condition}"}
+                                        <foreach collection="criterion.value" item="listItem"
+                                            open="(" close=")" separator=",">
+                                            ${r"#{listItem}"}
+                                        </foreach>
+                                    </when>
+                                </choose>
+                            </foreach>
+                        </trim>
+                    </if>
+                </foreach>
+            </where>
+        </if>
+    </sql>
+    <resultMap id="${entityHead}${className}" type="${basepackage}.dao.pojo.${entityHead}${className}">
+        <#list table.columns as column>
+        <<#if column.pk>id</#if><#if !column.pk>result</#if> column="${column.sqlName}" property="${column.columnNameLower}" />
+        </#list>
+    </resultMap>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insert开始节点 -->
+    <!-- <insert id="insert" parameterType="java.lang.Object"> -->
+    <insert id="insert" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO ${table.sqlName}
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <#list table.columns as column>
+            <#if column.insertable>
+            ${column.sqlName},
+            </#if>
+            </#list>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <#list table.columns as column>
+            <#if column.insertable>
+            <@mapperEl column.columnNameFirstLower/>,
+            </#if>
+            </#list>
+        </trim>
+    </insert>
+    <!-- 如果使用自定义主键，则使用如下被注释掉部分作为insertSelective开始节点 -->
+    <!-- <insert id="insertSelective" parameterType="java.lang.Object"> -->
+    <insert id="insertSelective" parameterType="java.lang.Object" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO ${table.sqlName}
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <#list table.columns as column>
+            <#if column.insertable>
+            <if test="${column.columnNameFirstLower} != null">
+            ${column.sqlName},
+            </if>
+            </#if>
+            </#list>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <#list table.columns as column>
+            <#if column.insertable>
+            <if test="${column.columnNameFirstLower} != null">
+            <@mapperEl column.columnNameFirstLower/>,
+            </if>
+            </#if>
+            </#list>
+        </trim>
+    </insert>
+    <sql id="set">
+        <set>
+            <#list table.columns as column>
+            <#if column.updatable>
+            ${column.sqlName} = <@targetMapperEl column.columnNameFirstLower/>,
+            </#if>
+            </#list>
+        </set>
+    </sql>
+    <sql id="selectiveSet">
+        <set>
+            <#list table.columns as column>
+            <#if column.updatable>
+            <if test="target.${column.columnNameFirstLower} != null">
+            ${column.sqlName} = <@targetMapperEl column.columnNameFirstLower/><#if column.enumColumn></#if>,
+            </if>
+            </#if>
+            </#list>
+        </set>
+    </sql>
+    <select id="countByCriteriaQuery" parameterType="${basepackage}.dao.query.CriteriaQuery"
+        resultType="java.lang.Long">
+        SELECT COUNT(*) FROM ${table.sqlName}
+        <include refid="criteriaQueryWhere" />
+    </select>
+    <select id="selectByCriteriaQuery" resultMap="${entityHead}${className}"
+        parameterType="${basepackage}.dao.query.CriteriaQuery">
+        SELECT
+        <if test="distinct">
+            DISTINCT
+        </if>
+        'true' as QUERYID,
+        ${table.sqlName}.*
+        FROM ${table.sqlName}
+        <include refid="criteriaQueryWhere" />
+        <if test="sorts != null">
+            <trim prefix="ORDER BY ">
+            <foreach collection="sorts" item="sort" separator=",">
+                ${r"${sort.field} ${sort.direction}"}
+            </foreach>
+            </trim>
+        </if>
+        <include refid="pager" />
+    </select>
+    <select id="selectById" resultMap="${entityHead}${className}" parameterType="${table.idColumn.javaType}">
+        SELECT
+        ${table.sqlName}.*
+        FROM ${table.sqlName}
+        WHERE id = ${r"#{_parameter}"}
+    </select>
+    <delete id="deleteById" parameterType="${table.idColumn.javaType}">
+        DELETE FROM ${table.sqlName}
+        WHERE id = ${r"#{_parameter}"}
+    </delete>
+    <delete id="deleteByCriteriaQuery" parameterType="${basepackage}.dao.model.param.DeleteByCriteriaQueryParam">
+        DELETE FROM ${table.sqlName}
+        <include refid="criteriaQueryWhere" />
+    </delete>
+    <update id="updateByCriteriaQuerySelective" parameterType="${basepackage}.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE ${table.sqlName}
+        <include refid="selectiveSet" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByCriteriaQuery" parameterType="${basepackage}.dao.model.param.UpdateByCriteriaQueryParam">
+        UPDATE ${table.sqlName}
+        <include refid="set" />
+        <include refid="criteriaQueryWhere" />
+    </update>
+    <update id="updateByIdSelective" parameterType="${basepackage}.dao.model.param.UpdateByIdParam">
+        UPDATE ${table.sqlName}
+        <include refid="selectiveSet" />
+        ${r"WHERE id = #{id}"}
+    </update>
+    <update id="updateById" parameterType="${basepackage}.dao.model.param.UpdateByIdParam">
+        UPDATE ${table.sqlName}
+        <include refid="set" />
+        ${r"WHERE id = #{id}"}
+    </update>
+</mapper>
