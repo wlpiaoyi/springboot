@@ -9,8 +9,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ${basepackage}.dao.impl.${entityHead}${className}Dao;
-import ${basepackage}.dao.pojo.${entityHead}${className};
+import ${basepackage}.${daopackage}.${entityHead}${className}Dao;
+import ${basepackage}.${entitypackage}.${entityHead}${className};
 import ${basepackage}.dao.query.CriteriaQuery;
 
 import lombok.Getter;

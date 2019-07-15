@@ -1,6 +1,6 @@
 <#include "/java_copyright.include">
 <#assign className = table.className>   
-package ${basepackage}.dao.impl;
+package ${basepackage}.${daopackage};
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +9,7 @@ import ${basepackage}.dao.BaseBatisDao;
 import ${basepackage}.dao.model.param.DeleteByCriteriaQueryParam;
 import ${basepackage}.dao.model.param.UpdateByCriteriaQueryParam;
 import ${basepackage}.dao.query.CriteriaQuery;
-import ${basepackage}.dao.pojo.${entityHead}${className};
+import ${basepackage}.${entitypackage}.${entityHead}${className};
 
 /**
  * 

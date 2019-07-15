@@ -41,7 +41,7 @@
             </where>
         </if>
     </sql>
-    <resultMap id="MbtDouyinTaskL1" type="org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL1">
+    <resultMap id="MbtDouyinTaskL1" type="org.wlpiaoyi.dataSource.entity.MbtDouyinTaskL1">
         <id column="id" property="id" />
         <result column="origin_id" property="originId" />
         <result column="order_id" property="orderId" />

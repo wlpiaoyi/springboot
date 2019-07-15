@@ -10,7 +10,7 @@ import org.wlpiaoyi.dataSource.dao.BaseBatisDao;
 import org.wlpiaoyi.dataSource.dao.model.param.DeleteByCriteriaQueryParam;
 import org.wlpiaoyi.dataSource.dao.model.param.UpdateByCriteriaQueryParam;
 import org.wlpiaoyi.dataSource.dao.query.CriteriaQuery;
-import org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL2;
+import org.wlpiaoyi.dataSource.entity.MbtDouyinTaskL2;
 
 /**
  * 

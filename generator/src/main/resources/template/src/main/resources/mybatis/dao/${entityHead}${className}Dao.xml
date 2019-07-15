@@ -6,7 +6,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!-- ${table.remarks} -->
-<mapper namespace="${basepackage}.dao.impl.${entityHead}${className}Dao">
+<mapper namespace="${basepackage}.${daopackage}.${entityHead}${className}Dao">
     
     <sql id="pager">
         <if test="pager != null">
@@ -46,7 +46,7 @@
             </where>
         </if>
     </sql>
-    <resultMap id="${entityHead}${className}" type="${basepackage}.dao.pojo.${entityHead}${className}">
+    <resultMap id="${entityHead}${className}" type="${basepackage}.${entitypackage}.${entityHead}${className}">
         <#list table.columns as column>
         <<#if column.pk>id</#if><#if !column.pk>result</#if> column="${column.sqlName}" property="${column.columnNameLower}" />
         </#list>

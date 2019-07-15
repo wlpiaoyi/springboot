@@ -2,41 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eda3437-b28a-4ee8-b55c-6f155d3c18cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/dataSource.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/repository/EntityJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/resources/data-source-druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/resources/data-source-druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/resources/data-source-normal.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/resources/data-source-normal.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/main/resources/jpa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/resources/jpa.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/ApplicationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/ApplicationLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/repository/DouyinTaskL1Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/DouyinTaskL1Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/META-INF/jpa.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/META-INF/jpa.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/data-source-druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/data-source-druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/data-source-normal.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/data-source-normal.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/jpa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/jpa.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/classes/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/classes/org/wlpiaoyi/springboot/jpa/repository/EntityJpaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/ApplicationLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/ApplicationLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1$StatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1$StatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/target/test-classes/org/wlpiaoyi/springboot/jpa/repository/DouyinTaskL1Repository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa/target/test-classes/org/wlpiaoyi/springboot/jpa/service/DouyinTaskL1Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL1Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL1Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL2Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL2Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/pojo/MbtDouyinTaskL1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/pojo/MbtDouyinTaskL2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL1Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL1Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL1Dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL2Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL2Dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table/sql-map-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table/sql-map-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/generator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/pojo/${entityHead}${className}.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/entity/${entityHead}${className}.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -75,7 +60,107 @@
     <favorites_list name="springboot" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/ApplicationLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-387">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="18" column="125" lean-forward="true" selection-start-line="18" selection-start-column="125" selection-end-line="19" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1101#1127#1" expanded="true" />
+                <element signature="e#1982#1983#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,12 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.listener.</find>
-      <find>downLatch</find>
-      <find>onMessage 关闭窗口</find>
-      <find>send-close</find>
-      <find>addOnlineCount</find>
-      <find>====================&gt;index:20</find>
       <find>uuid11</find>
       <find>====================&gt;index:</find>
       <find>uuid4</find>
@@ -118,6 +197,12 @@
       <find>DouyinTaskL1</find>
       <find>.entity.</find>
       <find>DouyinTaskL2</find>
+      <find>basepackage</find>
+      <find>dao</find>
+      <find>dao.p</find>
+      <find>dao.pojo</find>
+      <find>Douyin</find>
+      <find>DouyinAccount</find>
     </findStrings>
     <replaceStrings>
       <replace>this.listener.get().</replace>
@@ -138,11 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" />
-        <option value="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/DateUtile.java" />
-        <option value="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfigTest.java" />
-        <option value="$PROJECT_DIR$/jpa/src/test/java/org/wlpiaoyi/springboot/jpa/entity/DouyinTaskL1.java" />
-        <option value="$PROJECT_DIR$/jpa/src/main/resources/data-source-normal.properties" />
         <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/jpa/src/main/resources/data-source-druid.properties" />
         <option value="$PROJECT_DIR$/jpa/src/main/java/org/wlpiaoyi/springboot/jpa/configuration/JPAManagerConfig.java" />
@@ -171,24 +251,29 @@
         <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${className}Service.java" />
         <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${className}Dao.java" />
         <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/pojo/${className}.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/resources/generator.xml" />
-        <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL2.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/DouyinTaskL1Service.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java" />
         <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisPojoConfig.java" />
-        <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java" />
-        <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL2Dao.xml" />
         <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/entity/${entityHead}${className}.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml" />
-        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL1Service.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL1.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/pojo/MbtDouyinTaskL2.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" />
-        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/pojo/${entityHead}${className}.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java" />
+        <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/dao/impl/DouyinTaskL1Dao.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/generator.xml" />
+        <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL1Dao.java" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java" />
+        <option value="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL2.java" />
         <option value="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table/sql-map-config.xml" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml" />
+        <option value="$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/${schema}sql-map-config.xml" />
+        <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java" />
+        <option value="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -255,409 +340,6 @@
               <item name="dataSource" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="wlpiaoyi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="wlpiaoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="wlpiaoyi" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSource" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="${basepackage_dir}" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="${basepackage_dir}" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="${basepackage_dir}" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="${basepackage_dir}" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="${basepackage_dir}" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -672,7 +354,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563173016144" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563181938412" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/jpa.druid/src/test/java/org/wlpiaoyi/springboot/jpa" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dataSource" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -684,6 +366,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}" />
       <recent name="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/entity" />
       <recent name="$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao" />
     </key>
@@ -698,11 +381,11 @@
       <recent name="generator" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource" />
+      <recent name="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/resources" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DataSourceConfigTest.test">
+  <component name="RunManager" selected="Application.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generator.Generator" />
       <module name="generator" />
@@ -818,8 +501,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DataSourceConfigTest.test" />
         <item itemvalue="Application.Generator" />
+        <item itemvalue="JUnit.DataSourceConfigTest.test" />
         <item itemvalue="JUnit.DataSourceConfigTest.test" />
         <item itemvalue="JUnit.WebSocketServiceTest.test" />
         <item itemvalue="JUnit.WebSecketClientTest.test" />
@@ -864,26 +547,11 @@
       <workItem from="1562766015441" duration="22048000" />
       <workItem from="1562852137634" duration="2969000" />
       <workItem from="1562896795986" duration="9208000" />
-      <workItem from="1563109313069" duration="11455000" />
+      <workItem from="1563109313069" duration="17554000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataSourceConfigTest_test - 2019.07.14 at 22h 35m 34s.xml">
-      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataSourceConfigTest_test - 2019.07.14 at 22h 37m 15s.xml">
-      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 09h 56m 57s.xml">
-      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 15m 16s.xml">
-      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 17m 09s.xml">
-      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 19m 28s.xml">
       <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
@@ -899,9 +567,24 @@
     <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 38m 52s.xml">
       <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 46m 08s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 14h 59m 24s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 15h 00m 12s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 15h 00m 54s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataSourceConfigTest_test - 2019.07.15 at 15h 04m 18s.xml">
+      <configuration name="DataSourceConfigTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147343000" />
+    <option name="totallyTimeSpent" value="153442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,6 +597,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.3676681" />
       <window_info id="Structure" order="1" sideWeight="0.50127876" side_tool="true" weight="0.26979" />
@@ -925,7 +609,7 @@
       <window_info id="Web" order="7" sideWeight="0.5031645" side_tool="true" weight="0.26979" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.7216867" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.7144578" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" weight="0.62168676" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1099,55 +783,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/DouyinTaskL1Dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/service/DouyinTaskL1Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/DouyinTaskL2Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/dao/model/param/DeleteByCriteriaQueryParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/DouyinTaskL1Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/service/BaseBatisService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
@@ -1215,33 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/java/generator/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/dao/pojo/DouyinTaskL1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1260,32 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/${sqlName}.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/dao/BaseBatisDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -1293,24 +875,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
-          <folding>
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/output/src/main/resources/mybatis/table/sql-map-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -1336,50 +900,10 @@
         <state relative-caret-position="-191" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao.pojo/${entityHead}${className}.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/pojo/${entityHead}${className}.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-387" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL1Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="12" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1393,40 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1514">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/DouyinTaskL1Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1434,45 +924,238 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/pojo/MbtDouyinTaskL2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="864">
           <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java">
+    <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/dao.impl/DouyinTaskL2Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-478">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state>
+          <folding>
+            <element signature="e#0#676#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL2Dao.xml">
+    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/dao/impl/DouyinTaskL1Dao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/generator.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+        <state relative-caret-position="136">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL1Dao.xml">
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/dao/impl/MbtDouyinTaskL1Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="33" selection-start-line="21" selection-end-line="33" />
+        <state relative-caret-position="150">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml">
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        <state relative-caret-position="59">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#285#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/entity/${entityHead}${className}.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table/sql-map-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL1Dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao/MbtDouyinTaskL2Dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="191" column="35" selection-start-line="191" selection-start-column="29" selection-end-line="191" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/output/src/main/resources/mybatis/table/sql-map-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="78" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/generator/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/dao/${entityHead}${className}Dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/service/${entityHead}${className}Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/sql-map-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/resources/mybatis/table/${sqlName}.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL1Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/output/src/main/java/org/wlpiaoyi/dataSource/entity/MbtDouyinTaskL1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/template/src/main/java/${basepackage_dir}/dao/impl/${entityHead}${className}Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/service/MbtDouyinTaskL2Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.8.RELEASE/spring-data-jpa-2.1.8.RELEASE-sources.jar!/org/springframework/data/jpa/repository/config/EnableJpaRepositories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="138" column="11" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisEntityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/MybatisDaoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1101#1127#1" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/ApplicationLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="18" column="125" lean-forward="true" selection-start-line="18" selection-start-column="125" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>

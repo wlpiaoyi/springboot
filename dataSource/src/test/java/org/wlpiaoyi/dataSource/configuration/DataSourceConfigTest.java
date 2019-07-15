@@ -17,7 +17,7 @@ import java.util.List;
 
 @Configuration
 @EnableJpaRepositories(basePackages={"org.wlpiaoyi.dataSource.repository"}, transactionManagerRef = "transactionManager-jpa")
-//@EntityScan(basePackages={"org.wlpiaoyi.springboot.jpa.dao.pojo"})
+//@EntityScan(basePackages={"org.wlpiaoyi.springboot.jpa.dao.entity"})
 public class DataSourceConfigTest {
 
     @Before

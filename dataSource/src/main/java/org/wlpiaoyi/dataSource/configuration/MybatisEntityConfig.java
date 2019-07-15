@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = {"org.wlpiaoyi.dataSource.dao.pojo"},sqlSessionFactoryRef = "mybatisPojoSqlSessionFactory")
+@MapperScan(basePackages = {"org.wlpiaoyi.dataSource.entity"},sqlSessionFactoryRef = "EntitySqlSessionFactory-mybatis")
 public class MybatisEntityConfig {
 
 
@@ -23,7 +23,7 @@ public class MybatisEntityConfig {
     @Resource(name = "dataSource-druid")
     private DataSource dataSource;
 
-    @Bean(name = "mybatisPojoSqlSessionFactory")
+    @Bean(name = "EntitySqlSessionFactory-mybatis")
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         factoryBean.setDataSource(this.dataSource);

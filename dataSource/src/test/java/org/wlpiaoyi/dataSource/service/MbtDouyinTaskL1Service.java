@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.wlpiaoyi.dataSource.dao.impl.MbtDouyinTaskL1Dao;
-import org.wlpiaoyi.dataSource.dao.pojo.MbtDouyinTaskL1;
+import org.wlpiaoyi.dataSource.entity.MbtDouyinTaskL1;
 import org.wlpiaoyi.dataSource.dao.query.CriteriaQuery;
 
 import lombok.Getter;

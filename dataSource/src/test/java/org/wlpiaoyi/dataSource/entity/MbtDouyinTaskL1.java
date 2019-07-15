@@ -1,7 +1,7 @@
 /*
  * Powered By wlpiaoyi
  */
-package org.wlpiaoyi.dataSource.dao.pojo;
+package org.wlpiaoyi.dataSource.entity;
 
 import java.io.Serializable;
 import java.util.Date;
