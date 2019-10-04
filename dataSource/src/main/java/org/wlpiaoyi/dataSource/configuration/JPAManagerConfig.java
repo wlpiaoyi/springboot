@@ -6,10 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
-import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -56,7 +54,7 @@ public class JPAManagerConfig {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier("dataSource-druid") DataSource dataSource) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(@Qualifier("dataSource") DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource);
         String[] args = this.packagesToScan.split(",");
@@ -77,12 +75,5 @@ public class JPAManagerConfig {
         jpaProperties.put("use_second_level_cache", "false");
         entityManagerFactoryBean.setJpaProperties(jpaProperties);
         return entityManagerFactoryBean;
-    }
-
-    @Bean(name = "transactionManager-jpa")
-    public PlatformTransactionManager annotationDrivenTransactionManager(LocalContainerEntityManagerFactoryBean entityManagerFactoryBean) {
-        PlatformTransactionManager transactionManager = new JpaTransactionManager();
-        ((JpaTransactionManager) transactionManager).setEntityManagerFactory(entityManagerFactoryBean.getObject());
-        return transactionManager;
     }
 }

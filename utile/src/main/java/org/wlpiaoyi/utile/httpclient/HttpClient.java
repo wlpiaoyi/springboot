@@ -24,8 +24,19 @@ public class HttpClient {
     }
 
     public static String getResponseText(Response response) throws IOException {
+        if(response == null) return null;
         byte[] bytes = response.body().bytes();
         String text = new String(bytes);
+        return text;
+    }
+
+    public static Object getResponseData(Response response) throws IOException {
+        if(response == null) return null;
+        String text = HttpClient.getResponseText(response);
+        if(response.header("Content-Type").contains("application/json")){
+            Gson gson = new Gson();
+            return gson.fromJson(text, Map.class);
+        }
         return text;
     }
 
@@ -108,7 +119,7 @@ public class HttpClient {
         try {
             OkHttpClient httpClient = HttpClient.createClient(request, proxyIp, proxyPort);
             Response response = httpClient.newCall(request).execute();
-            if (response.isSuccessful()) {
+            if (response != null) {
                 return response;
             }
         } catch (SocketTimeoutException e1){
@@ -118,7 +129,6 @@ public class HttpClient {
         }
         return null;
     }
-
     /**
      * 创建连接端
      * @param request
@@ -127,7 +137,6 @@ public class HttpClient {
      * @return
      */
     private static final OkHttpClient createClient(Request request, String proxyIp, int proxyPort){
-
         OkHttpClient.Builder build;
         if(request.url().isHttps()){
             build = new OkHttpClient.Builder().sslSocketFactory(createSSLSocketFactory(), new TrustAllManager());

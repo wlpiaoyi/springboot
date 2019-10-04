@@ -13,6 +13,8 @@
         <module>utile</module>
         <module>dataSource</module>
         <module>generator</module>
+        <module>db.mybatis</module>
+        <module>proxy.socket</module>
     </modules>
 
 
@@ -39,6 +41,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
 
     </dependencies>
 

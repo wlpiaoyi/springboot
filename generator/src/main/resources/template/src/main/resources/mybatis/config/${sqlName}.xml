@@ -11,7 +11,7 @@
  ***********************************-->
  
 <!-- 
-<table sqlName="数据库表名" className="类名称" tableAlias="表的别名">
+<config sqlName="数据库表名" className="类名称" tableAlias="表的别名">
 	<column sqlName="数据库列名" columnAlias="列的别名" javaType="自定义javaType"
 	unique="是否唯一性约束" nullable="是否可以为空" pk="是否主键,在表没有主键的情况下,可以指定一个代理主键" 
 	updatable="是否可以更新" insertable="是否插入"	
@@ -19,7 +19,7 @@
 	enumClassName="如果枚举有值,生成的类名称将是这个,没有枚举值，该配置无用.示例值:Sex"
 	hibernateValidatorExprssion="HibernateValidator表达式: @NotNull @Min(10) @Pattern(regex=, flag=)"
 	/>
-</table>
+</config>
  -->
 <table sqlName="${table.sqlName}" className="${className}" tableAlias="${table.tableAlias}" >
 <#list table.columns as c>

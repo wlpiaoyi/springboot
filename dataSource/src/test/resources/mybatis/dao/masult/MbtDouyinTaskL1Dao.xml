@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--  -->
+<mapper namespace="org.wlpiaoyi.dataSource.dao.impl.MbtDouyinTaskL1Dao">
+
+    <select id="queryTest" parameterType="int" resultMap="org.wlpiaoyi.dataSource.dao.impl.MbtDouyinTaskL2Dao.MbtDouyinTaskL2">
+        SELECT ct.* FROM douyin_task_l2 ct
+        limit 0, #{size}
+    </select>
+
+</mapper>

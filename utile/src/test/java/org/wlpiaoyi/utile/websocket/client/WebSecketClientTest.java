@@ -21,15 +21,15 @@ public class WebSecketClientTest implements Runnable {
     @Test
     public void test() throws IOException {
 
-        int count = this.count;
-        while (count -- > 0){
-            new Thread(this).start();
-        }
-        while (this.count > 0){
-            try{
-                Thread.sleep(10);
-            }catch (Exception e){}
-        }
+//        int count = this.count;
+//        while (count -- > 0){
+//            new Thread(this).start();
+//        }
+//        while (this.count > 0){
+//            try{
+//                Thread.sleep(10);
+//            }catch (Exception e){}
+//        }
 
     }
 

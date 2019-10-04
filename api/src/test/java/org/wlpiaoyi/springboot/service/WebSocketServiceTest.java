@@ -34,20 +34,20 @@ public class WebSocketServiceTest implements WebSocketListener {
 
     @Before
     public void setUp() throws Exception {
-        WebSocketService.setWsListener(this);
+//        WebSocketService.setWsListener(this);
     }
 
     @Test
     public void test() {
-        String[] args = new String[]{};
-        SpringApplication.run(ApplicationLoader.class, args);
-        while (true){
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//        String[] args = new String[]{};
+//        SpringApplication.run(ApplicationLoader.class, args);
+//        while (true){
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
     @After

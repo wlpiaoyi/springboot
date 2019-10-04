@@ -12,7 +12,7 @@ import lombok.Getter;
 
 /**
  * 
- * ${table.remarks} Database Model
+ * Database Model
  * Generated automaticly
  * @version 1.0
  * @since 1.0

@@ -1,6 +1,7 @@
 package org.wlpiaoyi.utile;
 
 import lombok.Data;
+import org.wlpiaoyi.utile.exception.BusinessException;
 
 public class ResponseUtile {
 
@@ -18,11 +19,23 @@ public class ResponseUtile {
     }
 
     public static ResponseData getResponseSuccess(Object data){;
-        return ResponseUtile.getResponse(0,"success", null,data);
+        return ResponseUtile.getResponse(200,"success", null,data);
     }
 
+    public static  ResponseData getResponseData(int code, Object data){
+        return ResponseUtile.getResponse(code, null, null, data);
+    }
     public static  ResponseData getResponseMessage(int code, String message){
         return ResponseUtile.getResponse(code, message, null, null);
+    }
+
+    public static  ResponseData getResponseException(Exception e){
+        if(e instanceof BusinessException){
+            BusinessException bEx = (BusinessException) e;
+            return ResponseUtile.getResponse(bEx.getCode(), bEx.getMessage(), null, null);
+        }else{
+            return ResponseUtile.getResponse(500, null, e, null);
+        }
     }
 
     public static  ResponseData getResponseException(int code, String message, Exception e){

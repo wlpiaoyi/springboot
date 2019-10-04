@@ -23,4 +23,6 @@ import org.wlpiaoyi.dataSource.entity.MbtDouyinTaskL1;
  */
 public interface MbtDouyinTaskL1Dao extends BaseBatisDao<Long, MbtDouyinTaskL1> {
 
+    List<MbtDouyinTaskL1> queryTest(int pageSize);
+
 }

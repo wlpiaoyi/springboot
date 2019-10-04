@@ -7,8 +7,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.wlpiaoyi.dataSource.ApplicationLoader;
 import org.wlpiaoyi.dataSource.entity.DouyinTaskL1;
+import org.wlpiaoyi.dataSource.entity.MbtDouyinTaskL1;
 import org.wlpiaoyi.dataSource.repository.DouyinTaskL1Repository;
 import org.wlpiaoyi.dataSource.service.DouyinTaskL1Service;
+import org.wlpiaoyi.dataSource.service.MbtDouyinTaskL1Service;
 import org.wlpiaoyi.utile.DateUtile;
 
 import java.io.IOException;
@@ -57,9 +59,9 @@ public class DataSourceConfigTest {
                 + "\n<=======================");
 
 
-//        MbtDouyinTaskL1Service mbtTaskL1Service =  ApplicationLoader.getBean(MbtDouyinTaskL1Service.class);
-//        List<MbtDouyinTaskL1> mbtDouyinTaskL1s = mbtTaskL1Service.selectByCriteriaQuery(null);
-//        taskL1s =  taskL1Service.selectByCriteriaQuery(null);
+        MbtDouyinTaskL1Service mbtTaskL1Service =  ApplicationLoader.getBean(MbtDouyinTaskL1Service.class);
+        List<MbtDouyinTaskL1> mbtDouyinTaskL1s = mbtTaskL1Service.selectByCriteriaQuery(null);
+//        taskL1s =  taskL1Service.(null);
 //        DouyinTaskL1 taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());
 //        System.out.println("get=======================>\n" +
 //                taskL1.getLog()

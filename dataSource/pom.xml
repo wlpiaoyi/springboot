@@ -12,6 +12,7 @@
     <groupId>org.wlpiaoyi.springboot</groupId>
     <artifactId>jpa.druid</artifactId>
     <packaging>jar</packaging>
+
     <build>
         <plugins>
             <plugin>

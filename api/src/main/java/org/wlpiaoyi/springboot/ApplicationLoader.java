@@ -11,6 +11,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
+
 @Slf4j
 @EnableCaching
 @EnableScheduling
@@ -19,6 +20,8 @@ public class ApplicationLoader implements ApplicationContextAware {
 
     private static ApplicationContext APPLICATION_CONTEXT;
     public static void main(String[] args) {
+
+
         SpringApplication.run(ApplicationLoader.class, args);
     }
 
