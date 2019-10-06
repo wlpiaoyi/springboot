@@ -2,7 +2,7 @@ package org.wlpiaoyi.springboot.service.ws;
 
 import lombok.Getter;
 import org.springframework.stereotype.Component;
-import org.wlpiaoyi.utile.websocket.service.WsBootService;
+import org.wlpiaoyi.framework.utils.websocket.service.WsBootService;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;

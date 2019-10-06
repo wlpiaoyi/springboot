@@ -9,15 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
         <module name="dataSource" />
-        <module name="db.mybatis" />
         <module name="generator" />
         <module name="jpa.druid" />
-        <module name="proxy.socket" />
-        <module name="utile" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="db.mybatis" target="8" />
+      <module name="framework" target="1.5" />
       <module name="mybatis" target="1.5" />
+      <module name="proxy.socket" target="1.8" />
+      <module name="utile" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

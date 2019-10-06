@@ -3,7 +3,7 @@ package org.wlpiaoyi.springboot;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.wlpiaoyi.utile.exception.BusinessException;
+import org.wlpiaoyi.framework.utils.exception.BusinessException;
 
 import java.util.ArrayList;
 import java.util.List;

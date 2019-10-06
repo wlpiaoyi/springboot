@@ -19,13 +19,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.wlpiaoyi.springboot</groupId>
+            <groupId>org.wlpiaoyi.framework</groupId>
             <artifactId>utile</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.wlpiaoyi</groupId>
-            <artifactId>proxy.socket</artifactId>
+            <groupId>org.wlpiaoyi.framework</groupId>
+            <artifactId>proxy</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

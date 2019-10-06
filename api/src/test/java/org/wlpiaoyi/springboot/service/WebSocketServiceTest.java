@@ -3,11 +3,9 @@ package org.wlpiaoyi.springboot.service;
 import com.google.gson.Gson;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
-import org.springframework.boot.SpringApplication;
-import org.wlpiaoyi.springboot.ApplicationLoader;
+import org.junit.Test;;
 import org.wlpiaoyi.springboot.service.ws.WebSocketService;
-import org.wlpiaoyi.utile.websocket.WebSocketListener;
+import org.wlpiaoyi.framework.utils.websocket.WebSocketListener;
 
 import java.io.IOException;
 import java.util.Map;

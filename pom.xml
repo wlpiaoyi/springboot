@@ -8,13 +8,11 @@
     <artifactId>springboot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>api</module>
-        <module>utile</module>
         <module>dataSource</module>
         <module>generator</module>
-        <module>db.mybatis</module>
-        <module>proxy.socket</module>
     </modules>
 
 

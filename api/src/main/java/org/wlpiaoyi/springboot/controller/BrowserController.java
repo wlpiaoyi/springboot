@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.wlpiaoyi.springboot.service.Browser.BrowserDataService;
 import org.wlpiaoyi.springboot.service.Browser.BrowserTaskService;
-import org.wlpiaoyi.utile.ResponseUtile;
+import org.wlpiaoyi.framework.utils.ResponseUtils;
 
 @Slf4j
 @RestController
@@ -20,34 +20,34 @@ public class BrowserController {
     private BrowserTaskService taskService;
 
     @PostMapping("/create")
-    public ResponseUtile.ResponseData postDataForm(@RequestParam(required = false) String mobile,
+    public ResponseUtils.ResponseData postDataForm(@RequestParam(required = false) String mobile,
                                                    @RequestParam(required = false) String password){
         try{
             this.dataService.create(mobile, password);
-            return ResponseUtile.getResponseSuccess(null);
+            return ResponseUtils.getResponseSuccess(null);
         }catch (Exception e){
             e.printStackTrace();
-            return ResponseUtile.getResponseException(e);
+            return ResponseUtils.getResponseException(e);
         }
     }
 
     @GetMapping("quite")
-    public ResponseUtile.ResponseData quite(@RequestParam String mobile){
+    public ResponseUtils.ResponseData quite(@RequestParam String mobile){
         try{
-            return ResponseUtile.getResponseSuccess(this.dataService.quite(mobile));
+            return ResponseUtils.getResponseSuccess(this.dataService.quite(mobile));
         }catch (Exception e){
             e.printStackTrace();
-            return ResponseUtile.getResponseException(e);
+            return ResponseUtils.getResponseException(e);
         }
     }
 
     @GetMapping("gotoDill")
-    public ResponseUtile.ResponseData gotoDill(@RequestParam String mobile){
+    public ResponseUtils.ResponseData gotoDill(@RequestParam String mobile){
         try{
-            return ResponseUtile.getResponseSuccess(this.dataService.gotoDill(mobile));
+            return ResponseUtils.getResponseSuccess(this.dataService.gotoDill(mobile));
         }catch (Exception e){
             e.printStackTrace();
-            return ResponseUtile.getResponseException(e);
+            return ResponseUtils.getResponseException(e);
         }
     }
 
@@ -66,13 +66,13 @@ public class BrowserController {
     }
 
     @GetMapping("startListener")
-    public ResponseUtile.ResponseData searchDill(@RequestParam String mobile, @RequestParam(defaultValue = "60") long offTime){
+    public ResponseUtils.ResponseData searchDill(@RequestParam String mobile, @RequestParam(defaultValue = "60") long offTime){
         try{
             this.taskService.addTaskData(mobile, offTime, new BrowserTaskListner(this.dataService));
-            return ResponseUtile.getResponseSuccess(null);
+            return ResponseUtils.getResponseSuccess(null);
         }catch (Exception e){
             e.printStackTrace();
-            return ResponseUtile.getResponseException(e);
+            return ResponseUtils.getResponseException(e);
         }
     }
 
