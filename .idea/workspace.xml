@@ -2,48 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eda3437-b28a-4ee8-b55c-6f155d3c18cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/HttpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/BrowserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/BrowserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/SocketProxyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/SocketProxyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/SocketProxyController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSource/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/config/DataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/config/SqlSesionConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/dao/MbtDouyinTaskL1Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/dao/MbtDouyinTaskL2Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/entity/MbtDouyinTaskL1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/entity/MbtDouyinTaskL2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/service/MbtDouyinTaskL1Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/resources/data-source-druid.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.mybatis/src/main/resources/data-source-normal.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.socket/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.socket/src/main/java/org/wlpiaoyi/proxy/socket/SocketProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.socket/src/main/java/org/wlpiaoyi/proxy/socket/SocketProxyTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.socket/src/main/java/org/wlpiaoyi/proxy/socket/SocketThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.socket/src/main/java/org/wlpiaoyi/proxy/socket/SocketThreadStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/CodeUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/DateUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/OSUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/PackageUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/ResponseUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/exception/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/httpclient/HttpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WebSocketListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/WsUtile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/client/WebSocketEcho.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/main/java/org/wlpiaoyi/utile/websocket/service/WsBootService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/websocket/client/WebSecketClientTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,61 +46,9 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>insert</find>
-      <find>transactionManager-jpa</find>
-      <find>dataSource-druid</find>
-      <find>MbtDouyinTaskL1_auto_generation</find>
-      <find>entityHead</find>
-      <find>_auto_generation</find>
-      <find>__GENERATION_</find>
-      <find>mybatis-spring-boot-starter</find>
-      <find>DaoSqlSessionTemplate-mybatis&quot;</find>
-      <find>pa</find>
-      <find>MbtDouyinTaskL1</find>
-      <find>|</find>
-      <find>SocketThreadOutput</find>
-      <find>main</find>
-      <find>version must</find>
-      <find>ThreadO</find>
-      <find>socketStart</find>
-      <find>00 00 0D 0A 30 0D 0A 0D 0A</find>
-      <find>0D 0A 0D 0A</find>
-      <find>00 00 00 0D 0A 30 0D 0A 0D 0A</find>
-      <find>proxy</find>
-      <find>private</find>
-      <find>`</find>
-      <find>D</find>
-      <find>org.wlpiaoyi.utile</find>
-      <find>ResponseUtile</find>
-      <find>DateUtile</find>
-      <find>PackageUtile</find>
-      <find>DateUtils.</find>
-      <find>proxy.s</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>this.listener.get().</replace>
-      <replace>System.out.println</replace>
-      <replace>getScheme</replace>
-      <replace>org.wlpiaoyi.dataSource</replace>
-      <replace>.entity.</replace>
-      <replace>.dao.pojo.</replace>
-      <replace>dataSource</replace>
-      <replace>public</replace>
-      <replace>org.wlpiaoyi.framework.utils</replace>
-      <replace>ResponseUtils</replace>
-      <replace>DateUtils</replace>
-      <replace>PackageUtils</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/dataSource/src/main/resources/resources/mybatis</dir>
-      <dir>$PROJECT_DIR$/dataSource</dir>
-      <dir>$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,6 +58,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -151,13 +67,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563186407474" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/proxy.socket/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/main/resources/application-detail" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
-    <property name="project.structure.side.proportion" value="0.53361344" />
+    <property name="project.structure.side.proportion" value="0.18592437" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
@@ -169,22 +85,22 @@
       <recent name="org.wlpiaoyi.springboot.jpa.configuration" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/src/main/resources/application-detail" />
       <recent name="$PROJECT_DIR$/db.mybatis/src/main/resources" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/resources" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis" />
       <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.wlpiaoyi.utile" />
       <recent name="generator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/proxy.socket" />
       <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis" />
       <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/dao" />
-      <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/config" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/table" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -200,7 +116,20 @@
     </option>
     <option name="contentProportion" value="0.21459854" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ApplicationLoader">
+    <configuration name="ApplicationLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.ApplicationLoader" />
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wlpiaoyi.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="framework" />
       <option name="VM_PARAMETERS" />
@@ -248,6 +177,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApplicationLoader" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.wlpiaoyi.springboot.ApplicationLoader" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApplicationLoader" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -326,6 +267,10 @@
       <workItem from="1570187077740" duration="2543000" />
       <workItem from="1570251892809" duration="3587000" />
       <workItem from="1570332272661" duration="44000" />
+      <workItem from="1570501272975" duration="3045000" />
+      <workItem from="1572411277679" duration="214000" />
+      <workItem from="1572414243933" duration="8960000" />
+      <workItem from="1572443018097" duration="3540000" />
     </task>
     <servers />
   </component>
@@ -361,9 +306,6 @@
       <configuration name="HttpClientTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332521000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -391,7 +333,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -517,94 +461,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>api:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>api</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: org.wlpiaoyi.framework:utile:1.0-SNAPSHOT</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.53361344" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

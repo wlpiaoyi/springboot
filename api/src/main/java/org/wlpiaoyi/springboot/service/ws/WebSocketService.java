@@ -7,6 +7,7 @@ import org.wlpiaoyi.framework.utils.websocket.service.WsBootService;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
+import java.io.IOException;
 
 @Component
 @ServerEndpoint("/test/{scheme}")
@@ -30,6 +31,11 @@ public class WebSocketService extends WsBootService {
     @OnMessage
     public void onMessage(String message) {
         super.onWsMessage(message);
+        try {
+            this.sendAsyncMessage(message + "---");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

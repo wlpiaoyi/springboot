@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jpa.druid" />
         <module name="api" />
         <module name="dataSource" />
         <module name="generator" />
-        <module name="jpa.druid" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
