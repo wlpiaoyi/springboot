@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eda3437-b28a-4ee8-b55c-6f155d3c18cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/HttpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/ApplicationLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/SocketProxyController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/service/ws/WebSocketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/org/wlpiaoyi/springboot/service/WebSocketServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/java/org/wlpiaoyi/dataSource/configuration/JPAManagerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/main/resources/jpa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/main/resources/jpa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL1.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/entity/DouyinTaskL1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +56,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -67,7 +71,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563186407474" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/proxy.socket/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/main/resources/application-detail" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -77,6 +81,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/api/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/proxy.socket" />
+      <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis" />
+      <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/dao" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.wlpiaoyi.springboot" />
       <recent name="org.wlpiaoyi.utile" />
@@ -84,23 +95,16 @@
       <recent name="org.wlpiaoyi.springboot.jpa" />
       <recent name="org.wlpiaoyi.springboot.jpa.configuration" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api/src/main/resources/application-detail" />
-      <recent name="$PROJECT_DIR$/db.mybatis/src/main/resources" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis" />
-      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis/dao" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.wlpiaoyi.utile" />
       <recent name="generator" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/api/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/proxy.socket" />
-      <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis" />
-      <recent name="$PROJECT_DIR$/db.mybatis/src/main/java/org/wlpiaoyi/dataSource/mybatis/dao" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/src/main/resources" />
+      <recent name="$PROJECT_DIR$/api/src/main/resources/application-detail" />
+      <recent name="$PROJECT_DIR$/db.mybatis/src/main/resources" />
+      <recent name="$PROJECT_DIR$/dataSource/src/test/resources" />
+      <recent name="$PROJECT_DIR$/dataSource/src/test/resources/mybatis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,22 +118,8 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.21459854" />
   </component>
   <component name="RunManager" selected="Application.ApplicationLoader">
-    <configuration name="ApplicationLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.ApplicationLoader" />
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.wlpiaoyi.springboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="framework" />
       <option name="VM_PARAMETERS" />
@@ -177,6 +167,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApplicationLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.springboot.ApplicationLoader" />
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wlpiaoyi.springboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSourceConfigTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jpa.druid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wlpiaoyi.dataSource.configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.wlpiaoyi.dataSource.configuration" />
+      <option name="MAIN_CLASS_NAME" value="org.wlpiaoyi.dataSource.configuration.DataSourceConfigTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApplicationLoader" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.wlpiaoyi.springboot.ApplicationLoader" />
@@ -187,6 +206,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApplicationLoader" />
+        <item itemvalue="JUnit.DataSourceConfigTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -271,40 +291,36 @@
       <workItem from="1572411277679" duration="214000" />
       <workItem from="1572414243933" duration="8960000" />
       <workItem from="1572443018097" duration="3540000" />
+      <workItem from="1572487673772" duration="3853000" />
+      <workItem from="1573095738618" duration="1984000" />
+      <workItem from="1573441304972" duration="17000" />
+      <workItem from="1573443999621" duration="6396000" />
+      <workItem from="1573524326732" duration="4794000" />
+      <workItem from="1573546150735" duration="918000" />
+      <workItem from="1573638465158" duration="633000" />
+      <workItem from="1573782709793" duration="1157000" />
+      <workItem from="1573978813518" duration="879000" />
+      <workItem from="1575596815864" duration="1441000" />
+      <workItem from="1575856532181" duration="10000" />
+      <workItem from="1576464824115" duration="2140000" />
+      <workItem from="1576547683302" duration="2238000" />
+      <workItem from="1576655370572" duration="17000" />
+      <workItem from="1577096204145" duration="907000" />
+      <workItem from="1577684430406" duration="488000" />
+      <workItem from="1577685004565" duration="35000" />
+      <workItem from="1577685062469" duration="48000" />
+      <workItem from="1577687992936" duration="316000" />
+      <workItem from="1577945338358" duration="7000" />
+      <workItem from="1578019235943" duration="2614000" />
+      <workItem from="1578029374645" duration="20000" />
+      <workItem from="1578031806273" duration="6135000" />
+      <workItem from="1578047170032" duration="1511000" />
+      <workItem from="1578210014355" duration="281000" />
+      <workItem from="1578210965936" duration="669000" />
+      <workItem from="1578278897252" duration="106000" />
+      <workItem from="1578288608464" duration="38000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="HttpClientTest_test - 2019.08.30 at 14h 45m 05s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.08.30 at 14h 45m 12s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.08.30 at 14h 45m 45s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.08.30 at 14h 49m 16s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.08.30 at 14h 56m 47s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.09.24 at 17h 25m 25s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.09.24 at 17h 26m 01s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.09.25 at 10h 12m 50s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.09.25 at 10h 13m 09s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpClientTest_test - 2019.09.25 at 10h 17m 52s.xml">
-      <configuration name="HttpClientTest.test" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,6 +357,12 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Plugins" timestamp="1578278924854">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Plugins/0.0.1440.900@0.0.1440.900" timestamp="1578278924854" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -363,6 +385,21 @@
           <url>file://$PROJECT_DIR$/utile/src/test/java/org/wlpiaoyi/utile/httpclient/HttpClientTest.java</url>
           <line>35</line>
           <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/HttpController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/org/wlpiaoyi/springboot/controller/HttpController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataSource/src/test/java/org/wlpiaoyi/dataSource/configuration/DataSourceConfigTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="120" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

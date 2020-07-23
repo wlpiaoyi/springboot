@@ -11,7 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "douyin_task_l1")
+@Table(name = "douyin_task_l3")
 public class DouyinTaskL1 implements Serializable {
 
 

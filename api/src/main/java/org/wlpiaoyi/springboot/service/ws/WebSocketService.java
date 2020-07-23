@@ -1,5 +1,6 @@
 package org.wlpiaoyi.springboot.service.ws;
 
+import lombok.Data;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
 import org.wlpiaoyi.framework.utils.websocket.service.WsBootService;
@@ -15,6 +16,13 @@ public class WebSocketService extends WsBootService {
 
     @Getter
     private String scheme = "";
+
+    @Data
+    private static class WSData{
+        private int code;
+        private String message;
+    }
+
     /**
      * 建立连接回调
      */
@@ -22,6 +30,11 @@ public class WebSocketService extends WsBootService {
     public void onOpen(Session session, @PathParam("scheme") String scheme) {
         this.scheme = scheme;
         super.onWsOpen(session);
+        try {
+            this.sendMessage("ping");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -30,10 +43,14 @@ public class WebSocketService extends WsBootService {
      */
     @OnMessage
     public void onMessage(String message) {
-        super.onWsMessage(message);
         try {
-            this.sendAsyncMessage(message + "---");
-        } catch (IOException e) {
+            if(message.startsWith("test:")){
+                WSData data = this.onWsMessage("test:",message, WSData.class);
+                data.code += 1;
+                data.message = System.currentTimeMillis() + "";
+                this.sendMessage("test:", data);
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

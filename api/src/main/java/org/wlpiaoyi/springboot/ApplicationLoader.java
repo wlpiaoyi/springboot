@@ -29,10 +29,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ApplicationLoader implements ApplicationContextAware {
 
 
-    @Value("${server.port-d}")
+    @Value("${server.port}")
     private int httpPort;
     //4 对接口配置跨域设置
-    @Value("${server.port}")
+    @Value("${server.port-sec}")
     private int httpsPort;
 
     private static ApplicationContext APPLICATION_CONTEXT;

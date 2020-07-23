@@ -1,6 +1,5 @@
 package org.wlpiaoyi.dataSource.configuration;
 
-import org.apache.http.client.utils.DateUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,7 +35,7 @@ public class DataSourceConfigTest {
         System.out.println("get=======================>\n" +
                 taskL1.getLog()
                 + "\n<=======================");
-        taskL1.setLog(DateUtils.formatDate(new Date(), "yyyy/MM/dd HH:mm:ss"));
+//        taskL1.setLog(DateUtils.formatDate(new Date(), "yyyy/MM/dd HH:mm:ss"));
         try{
             taskL1Service.save(taskL1);
             taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());
@@ -49,7 +48,7 @@ public class DataSourceConfigTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        taskL1.setLog(DateUtils.formatDate(new Date(), "yyyy/MM/dd HH:mm:ss"));
+//        taskL1.setLog(DateUtils.formatDate(new Date(), "yyyy/MM/dd HH:mm:ss"));
         try{
             ApplicationLoader.getBean(DouyinTaskL1Repository.class).save(taskL1);
             taskL1 = ApplicationLoader.getBean(DouyinTaskL1Repository.class).getOne(taskL1s.get(0).getId());

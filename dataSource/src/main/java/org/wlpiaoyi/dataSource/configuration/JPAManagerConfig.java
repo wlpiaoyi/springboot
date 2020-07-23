@@ -22,7 +22,9 @@ public class JPAManagerConfig {
     private static final String HIBERNATE_DIALECT = "hibernate.dialect";
     private static final String HIBERNATE_SHOW_SQL = "hibernate.show_sql";
     private static final String HIBERNATE_FORMAT_SQL = "hibernate.format_sql";
-    private static final String HIBERNATE_DDL_AUTO = "hibernate.ddl-auto";
+//    private static final String HIBERNATE_DDL_AUTO = "hibernate.ddl-auto";
+    private static final String HIBERNATE_HBM2DLL_AUTO = "hibernate.hbm2ddl.auto";
+
     private static final String HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS = "hibernate.enable_lazy_load_no_trans";
     private static final String HIBERNATE_PHYSICAL_NAME_STRATEGY = "hibernate.physical_naming_strategy";
 
@@ -30,7 +32,7 @@ public class JPAManagerConfig {
     @Value("${spring.jpa.properties.hibernate.dialect}")
     private String dialect;
 
-    @Value("${spring.jpa.hibernate.ddl-auto}")
+    @Value("${spring.jpa.properties.hibernate.hbm2ddl.auto}")
     private String hbm2ddlAuto;
 
     @Value("${spring.jpa.show-sql}")
@@ -65,7 +67,7 @@ public class JPAManagerConfig {
 
         Properties jpaProperties = new Properties();
         jpaProperties.put(HIBERNATE_DIALECT, dialect);
-        jpaProperties.put(HIBERNATE_DDL_AUTO, hbm2ddlAuto);
+        jpaProperties.put(HIBERNATE_HBM2DLL_AUTO, hbm2ddlAuto);
         jpaProperties.put(HIBERNATE_SHOW_SQL, this.showSql);
         jpaProperties.put(HIBERNATE_FORMAT_SQL, this.formatSql);
         jpaProperties.put(HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS, this.enabelLazy);
